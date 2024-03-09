@@ -1,0 +1,37 @@
+header {
+    div:first-of-type{
+        div:last-of-type{
+            i:first-of-type{
+                font-size: 1.3rem;
+            }
+            i:last-of-type{
+                background-color: var(--fondo-3);
+                color: var(--color-1);
+                border-radius: 50%;
+            }
+        }
+    }
+    div{
+        .contacto{
+            background-color: var(--fondo-1);
+            color: var(--color-1);
+            font-weight: 600;
+        }
+    }
+    .flecha {
+        width: 40px;
+        height: 40px;
+        background-color: var(--fondo-1);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+
+        a {
+            text-decoration: none;
+            i {
+                color: var(--color-1);
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

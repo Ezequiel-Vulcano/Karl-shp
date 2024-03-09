@@ -1,0 +1,65 @@
+.section_5 {
+    overflow: hidden;
+    
+    h2 {
+        text-transform: uppercase;
+        color: var(--color-3);
+        line-height: 1.2;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    .contenedor-padre {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        transition: all 0.3s ease-in;
+        margin-left: 0;
+
+        .hijo {
+            flex: 0 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+
+            div {
+
+                div:first-of-type{
+                    img{
+                        max-width: 50px;
+                    }
+                }
+
+                p {
+                    color: var(--color-2);
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 700;   
+                    min-height: 300px;
+                }
+                
+                .foto_reseña {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                }
+
+                .foto_reseña + div {
+                    span:first-of-type {
+                        color: var(--color-3);
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 700;
+                    }
+                    span:last-of-type {
+                        color: var(--fondo-1);
+                        font-size: .8rem;
+                        line-height: 1.5;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

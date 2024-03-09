@@ -1,0 +1,23 @@
+.section_1 {
+
+    .contenedor{
+        padding: 3rem 0;
+        color: var(--color-1);
+        font-size: 17px;
+        font-weight: 700;
+
+        span:last-of-type{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+    .contenedor-1{
+        background-color: var(--fondo-2);
+    }
+    .contenedor-2{
+        background-color: var(--fondo-1);
+    }
+    .contenedor-3{
+        background-color: var(--fondo-3);
+    }
+}
