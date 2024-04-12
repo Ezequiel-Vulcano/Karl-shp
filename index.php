@@ -1,3 +1,8 @@
+<?php 
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -47,7 +52,9 @@
             <div class="col-md-9 mt-md-5 d-md-block d-none col-lg-7 d-flex">
                 <ul class="d-flex p-0 ">
                     <li>
-                        Inicio
+                        <a href="<?php require_once('vistas/seccion2.php') ?>">
+                            Inicio
+                        </a>
                     </li>
                     <li>
                         Productos
@@ -73,7 +80,8 @@
     </header>
 
     <main class="container-fluid index">
-        <?php  require_once("vistas/seccion1.php") ?>
+        <?php  require_once('vistas/seccion2.php');
+ ?>
     </main>
 
     <footer class="mt-5 pt-4 container-fluid">
