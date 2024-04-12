@@ -1,5 +1,6 @@
 .section_5 {
     overflow: hidden;
+    max-width: 1200px;
     
     h2 {
         text-transform: uppercase;
@@ -16,6 +17,7 @@
         flex-wrap: nowrap;
         transition: all 0.3s ease-in;
         margin-left: 0;
+        margin: auto;
 
         .hijo {
             flex: 0 0 auto;

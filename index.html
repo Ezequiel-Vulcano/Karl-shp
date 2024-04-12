@@ -4,94 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d906409094.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./sass/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <!--ANIMACION AOS-->
+
+    <link rel="stylesheet" href="./sass/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>TOMA 2</title>
 </head>
 <body>
 
     <header class="container">
-        <h1 class="d-none">Karl-Moda</h1>
-        <div class="row mt-5 d-flex justify-content-between">
-            <div class="col-4">
-                <img src="./imagenes/header/logo.png" alt="logo de la marca" class="img-fluid">
+        <div class="row">
+            <h1 class="d-none">Karl-Moda</h1>
+            <div class="col-4 mt-5 d-flex justify-content-between col-lg-6">
+                <div class="">
+                    <img src="./imagenes/header/logo.png" alt="logo de la marca" class="img-fluid">
+                </div>
             </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-                <i class="fa-solid fa-bag-shopping me-3"></i>                
-                <i class="fa-solid fa-bars p-2"></i>
+            <div class="col-4 mt-5 col-lg-6">
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <i class="fa-solid fa-bag-shopping me-3"></i>                
+                    <i class="fa-solid fa-bars p-2"></i>
+                </div>
+            </div>
+            <div class="mt-5 col-md-5 col-lg-2">
+                <i class="fa-brands fa-facebook me-3"></i>
+                <i class="fa-brands fa-linkedin-in me-3"></i>
+                <i class="fa-brands fa-twitter me-3"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="col-9 col-md-7 mt-5 contacto text-center col-lg-3 d-lg-none">
+                <span class="m-auto">
+                    <i class="fa-solid fa-headphones p-3"></i> +54 911 2585-7648
+                </span>
+            </div>
+            <div class="flecha d-flex justify-content-center">
+                <a href="#" class="d-flex align-items-center">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
+            <div class="col-md-9 mt-md-5 d-md-block d-none col-lg-7 d-flex">
+                <ul class="d-flex p-0 ">
+                    <li>
+                        page 1
+                    </li>
+                    <li>
+                        page 1
+                    </li>
+                    <li>
+                        page 1
+                    </li>
+                    <li>
+                        page 1
+                    </li>
+                    <li>
+                        page 1
+                    </li>
+                </ul>
+            </div>
+            <div class="col-9 col-md-7 mt-5 contacto col-lg-3 d-lg-flex d-none">
+                <span class="m-auto ">
+                    <i class="fa-solid fa-headphones p-3 quitar-fondo"></i> +54 911 2585-7648
+                </span>
             </div>
         </div>
-        <div class="mt-5">
-            <i class="fa-brands fa-facebook me-3"></i>
-            <i class="fa-brands fa-linkedin-in me-3"></i>
-            <i class="fa-brands fa-twitter me-3"></i>
-            <i class="fa-brands fa-pinterest"></i>
-        </div>
-        <div class="row mt-5">
-            <span class="contacto col-9 m-auto">
-                <i class="fa-solid fa-headphones p-3"></i> +54 911 2585-7648
-            </span>
-        </div>
-
-        <div class="flecha d-flex justify-content-center">
-            <a href="#" class="d-flex align-items-center">
-                <i class="fa-solid fa-chevron-up"></i>
-            </a>
-        </div>
+        
     </header>
 
-    <main class="container-fluid">
+    <main class="container-fluid index">
         <section class="section_1 row mt-4">
-            <div class="contenedor-1 contenedor col-12 text-center">
+            <div class="contenedor-1 contenedor col-12 col-md-4 text-center">
                 <span class="d-block">Envío y Devoluciones Gratuitas</span>
                 <span>Compra ahora</span>
             </div>
-            <div class="contenedor-2 contenedor col-12 text-center">
+            <div class="contenedor-2 contenedor col-12 col-md-4 text-center">
                 <span class="d-block">20% en todos los vestidos</span>
                 <span>Aprovecha el Codigo: Colorlib</span>
             </div>
-            <div class="contenedor-3 contenedor col-12 text-center">
+            <div class="contenedor-3 contenedor col-12 col-md-4 text-center">
                 <span class="d-block">20% para estudiantes</span>
                 <span>Aprovecha el Codigo: StudentOff</span>
             </div>
         </section>
 
         <section class="section_2 row">
-
-
             <div class="col-12 carrusel d-flex align-items-center">
-                <!--! ACA SE COLOCA EL CARRUSEL QUE GENERA DINAMICAMENTE EL CONTENIDO  -->
                 <div>
-                    <span class="carrusel-oferta">Saco de vestir blanco</span>
+                    <span class="carrusel-oferta">Conjunto clasico para hombre</span>
                     <h2 class="carrusel-titulo">$ 32.000</h2>
                     <div>
-                        <span class="carrusel-conocenos"></span>
-                    </div>
-                </div>
-                <div class="contentnt-btn">
-                    <div class="btn-1 btn">
-                        <div></div>
-                    </div>
-                    <div class="btn-2 btn">
-                        <div></div>
-                    </div>
-                    <div class="btn-3 btn">
-                        <div></div>
+                        <span class="carrusel-conocenos">Conocer Mas</span>
                     </div>
                 </div>
             </div>
-
-            <div class="col-12 contenedor-moda contenedor-moda-1 d-flex align-items-center justify-content-start p-5">
-                <div class="row">
+            
+            <div class="col-12 contenedor-moda contenedor-moda-1 d-flex align-items-center justify-content-start p-5 col-md-6">
+                <div class="row m-md-0">
                     <span class="d-block col-12 p-0">En accesorios</span>
                     <span class="d-block col-12 p-0">30% de descuento</span>
                     <span class="d-block col-8 text-center mt-3">Comprar</span>
                 </div>
             </div>
-            <div class="col-12 contenedor-moda contenedor-moda-2 d-flex align-items-center justify-content-start p-5">
-                <div class="row">
+            <div class="col-12 contenedor-moda contenedor-moda-2 d-flex align-items-center justify-content-start p-5 col-md-6">
+                <div class="row m-md-0">
                     <span class="d-block col-12 p-0">Bolsos nuevos</span>
                     <span class="d-block col-12 p-0">Edicion diseñador</span>
                     <span class="d-block col-8 text-center mt-3">Comprar</span>
@@ -99,33 +115,41 @@
             </div>
         </section>
 
-        <section class="section_3 row mt-5 p-2">
-            <h2 class="col-12 text-center mb-5 mt-5">Recien añadidos</h2>
-            <div class="col-12 text-center mb-5">
-                <span class="p-3 categorias" id="todos">Todos</span>
-                <span class="p-3 categorias" data-categoria="mujer" id="mujer">Mujer</span>
-                <span class="p-3 categorias" data-categoria="hombre" id="hombre">Hombre</span>
-                <span class="d-block"></span>
-                <span class="p-3 categorias" data-categoria="accesorios" id="accesorios">Accesorios</span>
-                <span class="p-3 categorias" data-categoria="zapatos" id="zapatos">Zapatos</span>
-                <span class="p-3 categorias" data-categoria="niños" id="niños">Niños</span>
-            </div>
-            <div class="col-12 contenedor-pruductos-nuevos">
-                <!--! GENERO DINAMICAMENTE LOS CATALOGOS NUEVOS -->
+        <div class="d-flex justify-content-center">
+            <section class="section_3 row mt-5 p-2">
+                <h2 class="col-12 text-center mb-5 mt-5">Recien añadidos</h2>
+                <div class="col-12 text-center mb-5 d-flex flex-wrap">
+                    <span class="p-3 categorias" id="todos">Todos</span>
+                    <span class="p-3 categorias" data-categoria="mujer" id="mujer">Mujer</span>
+                    <span class="p-3 categorias" data-categoria="hombre" id="hombre">Hombre</span>
+                    <span class="p-3 categorias" data-categoria="accesorios" id="accesorios">Accesorios</span>
+                    <span class="p-3 categorias" data-categoria="zapatos" id="zapatos">Zapatos</span>
+                    <span class="p-3 categorias" data-categoria="niños" id="niños">Niños</span>
+                </div>
+                <div class="col-12 contenedor-pruductos-nuevos d-flex flex-wrap">
+                    <!--! GENERO DINAMICAMENTE LOS CATALOGOS NUEVOS -->
+                </div>
+            </section>
+        </div>
+        
+        
+        <section class="section_4-maximo d-flex justify-content-center">
+            <div class="section_4 row align-items-center p-4 d-md-flex flex-md-column-reverse align-content-md-end">
+                <div class=" mb-5 d-flex">
+                    <div class="col-10 pt-5 d-flex flex-column">
+                        <span class="hot p-1">Hot</span>
+                        <div class="triangulo"></div>
+                        <h2>Camiseta Blanca</h2>
+                        <span>* Envio gratis a todo el pais</span>
+                        <span class="precio">$ 12.500</span>
+                        <span class="conocer">Conocer mas</span>
+                    </div>
+                </div>
             </div>
         </section>
+        
 
-        <section class="section_4 row mb-5 d-flex justify-content-center align-items-center">
-            <div class="col-10 p-5 d-flex flex-column justify-content-center">
-                <span class="hot p-1">Hot</span>
-                <div class="triangulo"></div>
-                <h2>Camiseta Blanca</h2>
-                <span>* Envio gratis a todo el pais</span>
-                <span class="precio">$ 12.500</span>
-            </div>
-        </section>
-
-        <section class="section_5 ">
+        <section class="section_5 "> <!--TODO TESTIMONIOS-->
             <h2 class="text-center mb-5 mt-5">Testimonios</h2>
             <div class="contenedor-padre">
 
@@ -184,11 +208,79 @@
             </div>
             
         </section>
-
-        
     </main>
 
-
+    <footer class="mt-5 pt-4 container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-3 d-flex flex-column align-items-center align-items-sm-start ps-sm-5 mt-lg-5 mt-md-5">
+                <img src="./imagenes/header/logo.png" alt="logo de la marca" >
+                <p class="text-center text-md-start mt-2 mb-4">
+                    © 2024 Progresive Web Apps. Todos los derechos reservados.
+                </p>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 col-lg-2 footer-lista-1 mt-5"> <!-- LISTA DE ENLACES 1 -->
+                <ul>
+                    <li>
+                        <a href="#">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#">Devoluciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div> 
+            <div class="col-12 col-md-4 col-sm-6 col-lg-2 mt-sm-5 footer-lista-2"> <!-- LISTA DE ENLACES 2 -->
+                <ul>
+                    <li>
+                        <a href="#">Mi cuenta</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#">Devoluciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 footer-form mt-5 mb-5 d-flex flex-column align-items-center "> <!-- NEWSLETTER -->
+                <span>Suscribite a nuestro Newsletter</span>
+                <form action="#" method="GET">
+                    <label for="email" class="d-none">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingrese su gmail">
+                    <button type="submit w-25">Enviar</button>
+                </form>
+            </div>
+            <div class="footer-iconos d-flex justify-content-center col-12 col-sm-6"> <!-- ICONOS -->
+                <a href="#">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        
+    </footer>
 
 
 

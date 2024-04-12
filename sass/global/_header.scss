@@ -1,16 +1,27 @@
 header {
-    div:first-of-type{
-        div:last-of-type{
+    > div:first-of-type{
+         div:last-of-type{
             i:first-of-type{
                 font-size: 1.3rem;
             }
+             
             i:last-of-type{
                 background-color: var(--fondo-3);
                 color: var(--color-1);
                 border-radius: 50%;
             }
+
+            span {
+                .quitar-fondo {
+                    background-color: var(--fondo-1);
+                }
+            }
+            
         }
     }
+
+
+    
     div{
         .contacto{
             background-color: var(--fondo-1);
@@ -25,7 +36,8 @@ header {
         position: fixed;
         bottom: 20px;
         right: 20px;
-
+        z-index: 9999;
+        
         a {
             text-decoration: none;
             i {

@@ -2,12 +2,11 @@
     .carrusel {
         height: 500px;
         width: 100%;
-        background-size: cover !important;
-        background-position: center !important;
         z-index: -2;
         position: relative;
-
-        transition: ringth 0.5s ease-in-out;
+        background-image: url("/imagenes/seccion2/bg-2.jpg");
+        background-position: center;
+        background-size: cover;
 
         div {
             .carrusel-oferta {
@@ -32,6 +31,8 @@
             }
         }
 
+        
+
         .aparecer {
             left: 0;
         }
@@ -46,6 +47,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
             .btn {
                 background-color: #ffffff;
                 height: 25px;
@@ -54,6 +56,7 @@
                 border-radius: 100%;
                 display: flex;
                 position: relative;
+
                 div {
                     background-color: black;
                     width: 10px;
@@ -87,6 +90,7 @@
         background-position: center;
         color: var(--color-1);
     }
+
     .contenedor-moda-1,
     .contenedor-moda-2 {
         span:first-of-type {
@@ -113,6 +117,6 @@
     }
     .contenedor-moda-2 {
         background-image: url("../imagenes/seccion2/bg-4.jpg");
-        height: 500px;
+        height: 400px;
     }
 }

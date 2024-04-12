@@ -1,9 +1,12 @@
-@use 'header';
-@use 'global';
-@use 'variables';
-@use 'seccion1';
-@use 'seccion2';
-@use 'seccion3';
-@use 'seccion4';
-@use 'seccion5';
-@use 'keyframes';
+@use 'global/header';
+@use 'global/global';
+@use 'global/footer';
+
+@use 'index/seccion1';
+@use 'index/seccion2';
+@use 'index/seccion3';
+@use 'index/seccion4';
+@use 'index/seccion5';
+
+@use 'breakpoints/B_index';
+@use 'breakpoints/B_global';
