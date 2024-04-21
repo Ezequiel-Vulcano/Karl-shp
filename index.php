@@ -1,5 +1,12 @@
 <?php 
+    $acceso_permitido = ["404.php", "inicio.php", "productos.php"];
+    $valoresGet = $_GET;
 
+    if(isset($valoresGet["home"])){
+        $vista = $valoresGet["home"];
+    } else {
+        $vista = "inicio.php";
+    }
 
 ?>
 
@@ -52,15 +59,19 @@
             <div class="col-md-9 mt-md-5 d-md-block d-none col-lg-7 d-flex">
                 <ul class="d-flex p-0 ">
                     <li>
-                        <a href="<?php require_once('vistas/seccion2.php') ?>">
+                        <a href="index.php?home=inicio.php">
                             Inicio
                         </a>
                     </li>
                     <li>
-                        Productos
+                        <a href="index.php?home=productos.php">
+                            Productos
+                        </a>
                     </li>
                     <li>
-                        Contacto
+                    <a href="index.php?home=404.php">
+                            404
+                        </a>
                     </li>
                     <li>
                         page 1
@@ -80,8 +91,13 @@
     </header>
 
     <main class="container-fluid index">
-        <?php  require_once('vistas/seccion2.php');
- ?>
+        <?php 
+            if(in_array($vista, $acceso_permitido)){
+                require_once("vistas/$vista");
+            } else {
+                require_once("vistas/404.php");
+            }
+        ?>
     </main>
 
     <footer class="mt-5 pt-4 container-fluid">
