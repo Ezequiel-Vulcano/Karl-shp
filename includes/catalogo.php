@@ -1,6 +1,6 @@
 <?php 
 
-$ropa_hombre = [
+$productos = [
     [
         "nombre" => "Buso Jersey acolchado",
         "tipo" => "buso",
@@ -19,9 +19,6 @@ $ropa_hombre = [
         "img" => "/imagenes/catalogo/hombre/2.png",
         "descripcion" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, nisi ac tempor interdum, lectus felis malesuada nisi, eu condimentum nulla lectus sed lorem. Duis quis libero vitae odio ultricies commodo. Vivamus at felis in odio lacinia tempor."
     ],
-];
-
-$ropa_mujer = [
     [
         "nombre" => "Vestido con flores",
         "tipo" => "vestido",
@@ -40,9 +37,6 @@ $ropa_mujer = [
         "img" => "/imagenes/catalogo/mujer/2.png",
         "descripcion" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, nisi ac tempor interdum, lectus felis malesuada nisi, eu condimentum nulla lectus sed lorem. Duis quis libero vitae odio ultricies commodo. Vivamus at felis in odio lacinia tempor."
     ],
-];
-
-$ropa_niños = [
     [
         "nombre" => "remera power ranger",
         "tipo" => "remera",
@@ -61,8 +55,7 @@ $ropa_niños = [
         "img" => "/imagenes/catalogo/niños/2.png",
         "descripcion" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, nisi ac tempor interdum, lectus felis malesuada nisi, eu condimentum nulla lectus sed lorem. Duis quis libero vitae odio ultricies commodo. Vivamus at felis in odio lacinia tempor."
     ],
-];
+]
 
-$productos = array_merge($ropa_hombre, $ropa_mujer, $ropa_niños);
 
 ?>

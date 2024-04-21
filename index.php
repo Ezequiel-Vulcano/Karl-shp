@@ -86,10 +86,20 @@
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?home=productos">
-                            Productos
-                        </a>
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.php?home=productos&genero=niños">Niños</a></li>
+                                <li><a class="dropdown-item" href="index.php?home=productos&genero=hombre">Hombres</a></li>
+                                <li><a class="dropdown-item" href="index.php?home=productos&genero=mujer">Mujeres</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="index.php?home=productos">Catalogo completo</a></li>
+                            </ul>
+                        </div>
                     </li>
+                    
                     <li>
                     <a href="index.php?home=404">
                             404

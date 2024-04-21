@@ -1,31 +1,37 @@
-<h2>Hola soy otra seccion</h2>
-<h1>Que tal marta</h1>
-<p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam magni minima, quam in sint ut ipsam corrupti molestiae assumenda explicabo tempora mollitia laborum cum recusandae rem. Similique, dolores corporis!
-</p>
+<?php 
+    $valoresGet = $_GET;    
+    /* Llamo a los valores de get donde almaceno a traves de los enlaces el genero para mostrar la ropa segun
+    - Niños
+    - Mujeres
+    _ Hombres
+    */
+?>
 
-<div class="d-flex">
-    <?php 
-        require_once("includes/catalogo.php");
+<section class="row">
+    <div class="col-xl-3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae dolorum hic nam ducimus eligendi ut consequuntur officia officiis impedit expedita, sapiente laudantium error magni sint recusandae aliquam! Laborum, rerum!
+        </p>
+    </div>
+    <div class="d-flex col-xl-9">
+        <div class="row d-flex">
+            <?php 
+                require_once("includes/catalogo.php");
+                require_once("includes/funciones.php");
 
-        foreach($productos as $valor){?>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $valor["nombre"]?></h5>
-                    <p class="card-text">descripcion</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><?php foreach($valor["colores"] as $color){echo $color;}?></li>
-                    <li class="list-group-item">tipo</li>
-                    <li class="list-group-item">precio</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Comprar</a>
-                </div>
-            </div>
-        <?php } 
-    ?>
+                if(isset($valoresGet["genero"])){
+                    /* Filtro todos los productos que tengo por genero */
+                    $productos_filtrados = filtrar_por_genero($valoresGet["genero"], $productos);
 
-</div>  
+                    /* Muestro las tarjetas filtradas */
+                    mostrar_tarjetas($productos_filtrados);
+                } else {
+                    /*El usuario Ingresa al catalogo completo de productos al ingresar en esta parte del codigo*/
+                    mostrar_tarjetas($productos);
+                }  
+            ?>
+        </div>
+    </div> 
+</section>
+ 
 
