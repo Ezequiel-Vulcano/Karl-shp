@@ -1,12 +1,26 @@
 <?php 
-    $acceso_permitido = ["404.php", "inicio.php", "productos.php"];
     $valoresGet = $_GET;
 
-    if(isset($valoresGet["home"])){
+    $acceso_permitido = [
+        "404" => [
+            "ruta" => "404.php",
+            "titulo" => "Error 404: pagina no encontrada"
+        ],
+        "inicio" => [
+            "ruta" => "inicio.php",
+            "titulo" => "Inicio"
+        ],
+        "productos" => [
+            "ruta" => "productos.php",
+            "titulo" => "Productos"
+        ]
+    ];
+
+    if(isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_permitido)){
         $vista = $valoresGet["home"];
     } else {
         $vista = "inicio.php";
-    }
+    };
 
 ?>
 
@@ -22,7 +36,15 @@
 
     <link rel="stylesheet" href="./sass/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>TOMA 2</title>
+    <title>
+        <?php 
+            if($vista == "inicio.php"){
+                echo "Inicio";
+            } else {
+                echo $acceso_permitido[$vista]["titulo"];
+            }
+        ?>
+    </title>
 </head>
 <body>
 
@@ -59,17 +81,17 @@
             <div class="col-md-9 mt-md-5 d-md-block d-none col-lg-7 d-flex">
                 <ul class="d-flex p-0 ">
                     <li>
-                        <a href="index.php?home=inicio.php">
+                        <a href="index.php?home=inicio">
                             Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="index.php?home=productos.php">
+                        <a href="index.php?home=productos">
                             Productos
                         </a>
                     </li>
                     <li>
-                    <a href="index.php?home=404.php">
+                    <a href="index.php?home=404">
                             404
                         </a>
                     </li>
@@ -92,8 +114,8 @@
 
     <main class="container-fluid index">
         <?php 
-            if(in_array($vista, $acceso_permitido)){
-                require_once("vistas/$vista");
+            if(array_key_exists($vista, $acceso_permitido)){
+                require_once("vistas/$vista.php");
             } else {
                 require_once("vistas/404.php");
             }
