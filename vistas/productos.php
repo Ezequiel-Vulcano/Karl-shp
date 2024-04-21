@@ -7,7 +7,7 @@
     */
 ?>
 
-<section class="row">
+<section class="row catalogo_productos">
     <div class="col-xl-3">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae dolorum hic nam ducimus eligendi ut consequuntur officia officiis impedit expedita, sapiente laudantium error magni sint recusandae aliquam! Laborum, rerum!

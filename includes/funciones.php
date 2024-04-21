@@ -24,11 +24,11 @@ function filtrar_por_genero(string $genero, array $productos):array{
 */
 function mostrar_tarjetas(array $productos):void{
     foreach($productos as $valor){?>
-        <div class="card col-xl-6">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="card col-xl-4">
+            <img src="<?php echo $valor["img"]?>" class="img-fluid" alt="foto de <?php echo $valor["nombre"]?>">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $valor["nombre"]?></h5>
-                <p class="card-text">descripcion</p>
+                <p class="card-text"><?php echo $valor["descripcion"]?></p>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><?php foreach($valor["colores"] as $color){echo $color;}?></li>

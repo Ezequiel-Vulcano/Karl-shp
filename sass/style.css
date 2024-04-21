@@ -32,6 +32,10 @@ header .flecha a i {
   font-size: 1.5rem;
 }
 
+.catalogo_productos {
+  background-color: red !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -399,6 +403,13 @@ footer .footer-iconos a i {
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+}
+
+main {
+  max-width: 1500px !important;
+}
+main .catalogo_productos {
+  background-color: red !important;
 }
 
 @media (min-width: 350px) {
