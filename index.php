@@ -13,6 +13,10 @@
         "productos" => [
             "ruta" => "productos.php",
             "titulo" => "Productos"
+        ],
+        "detalle_productos" => [
+            "ruta" => "detalle_producto.php",
+            "titulo" => "Detalle de Producto"
         ]
     ];
 

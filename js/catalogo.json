@@ -1,0 +1,730 @@
+[
+    {
+        "descuento": true,
+        "porcentaje": 0.2,
+        "id": 1,
+        "nombre": "Chomba lisa color dual",
+        "tipo": "chomba",
+        "genero": "hombre",
+        "colores": [
+            "celeste",
+            "gris",
+            "rosa",
+            "violeta"
+        ],
+        "precio": 23000,
+        "img": ".\/imagenes\/catalogo\/hombre\/1.webp",
+        "descripcion": "Chomba lisa color dual para hombre en una combinaci\u00f3n vibrante de colores celeste, gris, rosa y violeta. Esta chomba es ideal para un estilo casual y c\u00f3modo. Su dise\u00f1o vers\u00e1til la hace perfecta para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda"
+    },
+    {
+        "descuento": false,
+        "id": 27,
+        "nombre": "Chomba lisa roja",
+        "tipo": "chomba",
+        "genero": "hombre",
+        "colores": [
+            "rojo",
+            "bordo"
+        ],
+        "precio": 25000,
+        "img": ".\/imagenes\/catalogo\/hombre\/2.webp",
+        "descripcion": "Chomba lisa roja para hombre en un tono vibrante y llamativo. Perfecta para un look elegante y moderno. Su dise\u00f1o cl\u00e1sico y vers\u00e1til la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y durabilidad durante todo el d\u00eda"
+    },
+    {
+        "descuento": true,
+        "porcentaje": 0.2,
+        "id": 28,
+        "nombre": "Chompa lisa Arena",
+        "tipo": "chomba",
+        "genero": "hombre",
+        "colores": [
+            "beige",
+            "celeste",
+            "blanco"
+        ],
+        "precio": 19000,
+        "img": ".\/imagenes\/catalogo\/hombre\/3.webp",
+        "descripcion": "Chompa lisa Arena para hombre en un tono neutro y vers\u00e1til. Perfecta para un estilo casual y relajado. Su dise\u00f1o cl\u00e1sico y c\u00f3modo la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar comodidad y durabilidad durante todo el d\u00eda"
+    },
+    {
+        "descuento": true,
+        "porcentaje": 0.3,
+        "id": 29,
+        "nombre": "Chomba a rayas",
+        "tipo": "chomba",
+        "genero": "hombre",
+        "colores": [
+            "gris",
+            "azul",
+            "rojo",
+            "negro"
+        ],
+        "precio": 32000,
+        "img": ".\/imagenes\/catalogo\/hombre\/4.webp",
+        "descripcion": "Chomba a rayas para hombre en una combinaci\u00f3n cl\u00e1sica de colores gris, azul, rojo y negro. Perfecta para un estilo moderno y juvenil. Su dise\u00f1o vers\u00e1til la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y estilo durante todo el d\u00eda."
+    },
+    {
+        "descuento": true,
+        "porcentaje": 0.2,
+        "id": 30,
+        "nombre": "Remera lisa clasica",
+        "tipo": "remera",
+        "genero": "hombre",
+        "colores": [
+            "celeste",
+            "gris",
+            "negro",
+            "blanco"
+        ],
+        "precio": 15000,
+        "img": ".\/imagenes\/catalogo\/hombre\/5.webp",
+        "descripcion": "Remera lisa cl\u00e1sica para hombre en una selecci\u00f3n de colores celeste, gris, negro y blanco. Perfecta para un estilo casual y vers\u00e1til. Su dise\u00f1o atemporal la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y durabilidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 31,
+        "nombre": "Remera mixta",
+        "tipo": "remera",
+        "genero": "hombre",
+        "colores": [
+            "verde",
+            "blanco",
+            "negro",
+            "azul"
+        ],
+        "precio": 14000,
+        "img": ".\/imagenes\/catalogo\/hombre\/6.webp",
+        "descripcion": "Remera mixta para hombre en una combinaci\u00f3n de colores verde, blanco, negro y azul. Perfecta para un estilo moderno y urbano. Su dise\u00f1o vers\u00e1til la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y estilo durante todo el d\u00eda"
+    },
+    {
+        "descuento": true,
+        "porcentaje": 0.4,
+        "id": 32,
+        "nombre": "Remera estampada",
+        "tipo": "remera",
+        "genero": "hombre",
+        "colores": [
+            "blanco"
+        ],
+        "precio": 27000,
+        "img": ".\/imagenes\/catalogo\/hombre\/7.webp",
+        "descripcion": "Remera estampada para hombre en un elegante color blanco. Perfecta para un estilo fresco y moderno. Su dise\u00f1o \u00fanico y vers\u00e1til la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y estilo durante todo el d\u00eda"
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 33,
+        "nombre": "Remera mixta clasica",
+        "tipo": "remera",
+        "genero": "hombre",
+        "colores": [
+            "gris",
+            "azul"
+        ],
+        "precio": 18000,
+        "img": ".\/imagenes\/catalogo\/hombre\/8.webp",
+        "descripcion": "Remera mixta cl\u00e1sica para hombre en una combinaci\u00f3n de colores gris y azul. Perfecta para un estilo casual y vers\u00e1til. Su dise\u00f1o atemporal la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y estilo durante todo el d\u00eda"
+    },
+    {
+        "descuento": false,
+        "id": 34,
+        "nombre": "Remera mixta larga",
+        "tipo": "remera",
+        "genero": "hombre",
+        "colores": [
+            "verde",
+            "gris",
+            "negro",
+            "rojo"
+        ],
+        "precio": 31000,
+        "img": ".\/imagenes\/catalogo\/hombre\/9.webp",
+        "descripcion": "Remera mixta larga para hombre en una combinaci\u00f3n de colores verde, gris, negro y rojo. Perfecta para un estilo moderno y urbano. Su dise\u00f1o vers\u00e1til la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y estilo durante todo el d\u00eda"
+    },
+    {
+        "descuento": false,
+        "id": 35,
+        "nombre": "Remera estampada simple",
+        "tipo": "remera",
+        "genero": "hombre",
+        "colores": [
+            "negro"
+        ],
+        "precio": 23000,
+        "img": ".\/imagenes\/catalogo\/hombre\/10.webp",
+        "descripcion": "Remera estampada simple para hombre en un cl\u00e1sico color negro. Perfecta para un estilo vers\u00e1til y moderno. Su dise\u00f1o \u00fanico la hace ideal para cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar confort y estilo durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 36,
+        "nombre": "PANTAL\u00d3N SPORT BEIGE",
+        "tipo": "pantalon",
+        "genero": "hombre",
+        "colores": [
+            "beige",
+            "negro"
+        ],
+        "precio": 47000,
+        "img": ".\/imagenes\/catalogo\/hombre\/11.webp",
+        "descripcion": "Pantal\u00f3n sport beige para hombre, una opci\u00f3n elegante y vers\u00e1til. Confeccionado en una combinaci\u00f3n de colores beige y negro. Su dise\u00f1o cl\u00e1sico y c\u00f3modo lo convierte en una elecci\u00f3n ideal para cualquier ocasi\u00f3n. Fabricado con materiales de alta calidad para garantizar comodidad y estilo durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.3,
+        "descuento": true,
+        "id": 37,
+        "nombre": "PANTAL\u00d3N CARGO VERDE",
+        "tipo": "pantalon",
+        "genero": "hombre",
+        "colores": [
+            "verde",
+            "beige"
+        ],
+        "precio": 57000,
+        "img": ".\/imagenes\/catalogo\/hombre\/12.webp",
+        "descripcion": "Pantal\u00f3n cargo verde para hombre, una elecci\u00f3n moderna y funcional. Presenta una combinaci\u00f3n de colores verde y beige. Su dise\u00f1o vers\u00e1til y pr\u00e1ctico lo convierte en una opci\u00f3n ideal para cualquier ocasi\u00f3n casual. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.3,
+        "descuento": true,
+        "id": 38,
+        "nombre": "JOGGER LISO BEIGE",
+        "tipo": "pantalon",
+        "genero": "hombre",
+        "colores": [
+            "beige",
+            "azul",
+            "negro"
+        ],
+        "precio": 57000,
+        "img": ".\/imagenes\/catalogo\/hombre\/13.webp",
+        "descripcion": "Jogger liso beige para hombre, una opci\u00f3n moderna y c\u00f3moda. Disponible en colores beige, azul y negro. Su dise\u00f1o vers\u00e1til y urbano lo convierte en una elecci\u00f3n ideal para cualquier ocasi\u00f3n casual. Fabricado con materiales de alta calidad para garantizar durabilidad y estilo durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 39,
+        "nombre": "PANTAL\u00d3N DE GABARDINA MARR\u00d3N",
+        "tipo": "pantalon",
+        "genero": "hombre",
+        "colores": [
+            "marron",
+            "bordo"
+        ],
+        "precio": 48000,
+        "img": ".\/imagenes\/catalogo\/hombre\/14.webp",
+        "descripcion": "Pantal\u00f3n de gabardina marr\u00f3n para hombre, una opci\u00f3n cl\u00e1sica y elegante. Disponible en tonos marr\u00f3n y bord\u00f3. Su dise\u00f1o atemporal y vers\u00e1til lo convierte en una elecci\u00f3n ideal para cualquier ocasi\u00f3n casual o formal. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 49,
+        "nombre": "PANTAL\u00d3N DE GABARDINA SPORT LISO BEIGE",
+        "tipo": "pantalon",
+        "genero": "hombre",
+        "colores": [
+            "negro",
+            "beige",
+            "azul"
+        ],
+        "precio": 55000,
+        "img": ".\/imagenes\/catalogo\/hombre\/15.webp",
+        "descripcion": "Pantal\u00f3n de gabardina sport liso beige para hombre, una opci\u00f3n moderna y vers\u00e1til. Disponible en colores negro, beige y azul. Su dise\u00f1o c\u00f3modo y funcional lo convierte en una elecci\u00f3n ideal para cualquier ocasi\u00f3n casual. Fabricado con materiales de alta calidad para garantizar durabilidad y estilo durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 50,
+        "nombre": "PANTAL\u00d3N DE GABARDINA NEGRO",
+        "tipo": "pantalon",
+        "genero": "hombre",
+        "colores": [
+            "negro"
+        ],
+        "precio": 53000,
+        "img": ".\/imagenes\/catalogo\/hombre\/16.webp",
+        "descripcion": "Pantal\u00f3n de gabardina negro para hombre, una opci\u00f3n cl\u00e1sica y elegante. Su dise\u00f1o vers\u00e1til lo convierte en una elecci\u00f3n ideal para cualquier ocasi\u00f3n casual o formal. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.3,
+        "descuento": true,
+        "id": 51,
+        "nombre": "SWEATER MEDIO CIERRE GRIS CLARO",
+        "tipo": "abrigo",
+        "genero": "hombre",
+        "colores": [
+            "gris",
+            "azul"
+        ],
+        "precio": 43000,
+        "img": ".\/imagenes\/catalogo\/hombre\/17.webp",
+        "descripcion": "Sweater Medio Cierre Gris Claro para hombre, disponible en gris y azul. Una prenda vers\u00e1til y c\u00f3moda que a\u00f1ade un toque de estilo casual a tu vestuario. Perfecto para combinar con tus jeans o pantalones chinos favoritos, este sweater es ideal para los d\u00edas frescos de primavera o oto\u00f1o. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 52,
+        "nombre": "SWEATER ESCOTE EN V AZULINO",
+        "tipo": "abrigo",
+        "genero": "hombre",
+        "colores": [
+            "azul",
+            "celeste"
+        ],
+        "precio": 33000,
+        "img": ".\/imagenes\/catalogo\/hombre\/18.webp",
+        "descripcion": "Sweater Escote en V Azulino para hombre, disponible en azul y celeste. Una prenda cl\u00e1sica y elegante que a\u00f1ade un toque de estilo refinado a tu guardarropa. Perfecto para combinar con pantalones de vestir o jeans, este sweater es una opci\u00f3n vers\u00e1til para cualquier ocasi\u00f3n. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.4,
+        "descuento": true,
+        "id": 53,
+        "nombre": "SWEATER CAMPERA LISA NEGRO",
+        "tipo": "abrigo",
+        "genero": "hombre",
+        "colores": [
+            "negro",
+            "gris",
+            "bordo"
+        ],
+        "precio": 44000,
+        "img": ".\/imagenes\/catalogo\/hombre\/19.webp",
+        "descripcion": "Sweater Campera Lisa Negro para hombre, disponible en negro, gris y bordo. Una prenda vers\u00e1til y funcional que combina estilo y confort. Perfecto para los d\u00edas frescos de oto\u00f1o o invierno, esta campera es ideal para combinar con tus outfits casuales. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.4,
+        "descuento": true,
+        "id": 54,
+        "nombre": "BUZO DE FRISA CON CAPUCHA AZUL",
+        "tipo": "abrigo",
+        "genero": "hombre",
+        "colores": [
+            "negro",
+            "azul",
+            "gris"
+        ],
+        "precio": 39000,
+        "img": ".\/imagenes\/catalogo\/hombre\/20.webp",
+        "descripcion": "Buzo de Frisa con Capucha Azul para hombre, disponible en negro, azul y gris. Una prenda c\u00f3moda y moderna que te mantiene abrigado con estilo. Perfecto para usar en tus actividades diarias o para relajarte en casa, este buzo con capucha es una opci\u00f3n vers\u00e1til y funcional. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 55,
+        "nombre": "SWEATER ESCOTE EN V GRIS CLARO MELANGE",
+        "tipo": "abrigo",
+        "genero": "hombre",
+        "colores": [
+            "negro",
+            "violeta"
+        ],
+        "precio": 30000,
+        "img": ".\/imagenes\/catalogo\/hombre\/21.webp",
+        "descripcion": "Sweater Escote en V Gris Claro Melange para hombre, disponible en negro y violeta. Una prenda elegante y vers\u00e1til que a\u00f1ade un toque de estilo a tu guardarropa. Perfecto para combinar con pantalones de vestir o jeans, este sweater es ideal para cualquier ocasi\u00f3n. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.4,
+        "descuento": true,
+        "id": 56,
+        "nombre": "BUZO R\u00daSTICO ESTAMPADO VERDE OSCURO",
+        "tipo": "abrigo",
+        "genero": "hombre",
+        "colores": [
+            "verde",
+            "celeste"
+        ],
+        "precio": 53000,
+        "img": ".\/imagenes\/catalogo\/hombre\/22.webp",
+        "descripcion": "Buzo R\u00fastico Estampado Verde Oscuro para hombre, disponible en verde y celeste. Una prenda c\u00f3moda y con estilo que a\u00f1ade un toque distintivo a tu vestuario. Perfecto para usar en tus actividades diarias o para relajarte en casa, este buzo es una opci\u00f3n vers\u00e1til y moderna. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 57,
+        "nombre": "BUZO CAMPERA R\u00daSTICO GRIS MELANGE",
+        "tipo": "abrigo",
+        "genero": "hombre",
+        "colores": [
+            "blanco"
+        ],
+        "precio": 59000,
+        "img": ".\/imagenes\/catalogo\/hombre\/23.webp",
+        "descripcion": "Buzo Campera R\u00fastico Gris Melange para hombre, disponible en blanco. Una prenda c\u00f3moda y moderna que combina estilo y funcionalidad. Perfecto para mantenerte abrigado en los d\u00edas frescos, este buzo es ideal para usar en tus actividades diarias o para relajarte en casa. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 2,
+        "nombre": "SWEATER LYNN RAYADO",
+        "tipo": "abrigo",
+        "genero": "mujer",
+        "colores": [
+            "rosa",
+            "celeste",
+            "azul"
+        ],
+        "precio": 74000,
+        "img": ".\/imagenes\/catalogo\/mujer\/1.webp",
+        "descripcion": "Sweater Lynn Rayado para mujer, disponible en rosa, celeste y azul. Una prenda vers\u00e1til y atractiva que a\u00f1adir\u00e1 estilo y calidez a tu guardarropa. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 3,
+        "nombre": "PANTAL\u00d3N BOHO ARETHA",
+        "tipo": "pantalon",
+        "genero": "mujer",
+        "colores": [
+            "negro",
+            "celeste",
+            "azul"
+        ],
+        "precio": 28000,
+        "img": ".\/imagenes\/catalogo\/mujer\/2.webp",
+        "descripcion": "Pantal\u00f3n Boho Aretha para mujer, disponible en negro, celeste y azul. Una prenda c\u00f3moda y chic que a\u00f1adir\u00e1 un toque bohemio a tu estilo. Perfecto para combinar con tus blusas favoritas y crear looks casuales o semi-formales. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 4,
+        "nombre": "CARDIGAN BELLE",
+        "tipo": "abrigo",
+        "genero": "mujer",
+        "colores": [
+            "negro",
+            "blanco"
+        ],
+        "precio": 18000,
+        "img": ".\/imagenes\/catalogo\/mujer\/3.webp",
+        "descripcion": "Cardigan Belle para mujer, disponible en negro y blanco. Una prenda vers\u00e1til y elegante que a\u00f1adir\u00e1 un toque de sofisticaci\u00f3n a tu vestuario. Perfecto para llevarlo sobre tus conjuntos favoritos en d\u00edas frescos o como capa adicional en las noches m\u00e1s fr\u00edas. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 5,
+        "nombre": "REMERA KIND",
+        "tipo": "remera",
+        "genero": "mujer",
+        "colores": [
+            "blanco",
+            "beige"
+        ],
+        "precio": 48000,
+        "img": ".\/imagenes\/catalogo\/mujer\/4.webp",
+        "descripcion": "Remera Kind para mujer, disponible en blanco y beige. Una prenda b\u00e1sica y vers\u00e1til que es un imprescindible en tu armario. Perfecta para combinar con pantalones, faldas o shorts en cualquier ocasi\u00f3n. Su dise\u00f1o simple y elegante te garantiza un estilo atemporal. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 6,
+        "nombre": "JEAN MOM COLOR",
+        "tipo": "pantalon",
+        "genero": "mujer",
+        "colores": [
+            "rayas"
+        ],
+        "precio": 23000,
+        "img": ".\/imagenes\/catalogo\/mujer\/5.webp",
+        "descripcion": "Jean Mom Color para mujer, disponible en rayas. Un pantal\u00f3n moderno y relajado que a\u00f1ade un toque de color a tu atuendo diario. Comb\u00ednalo f\u00e1cilmente para crear conjuntos casuales y c\u00f3modos. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 7,
+        "nombre": "JEAN MOM STONE WASH",
+        "tipo": "pantalon",
+        "genero": "mujer",
+        "colores": [
+            "salmon"
+        ],
+        "precio": 33000,
+        "img": ".\/imagenes\/catalogo\/mujer\/6.webp",
+        "descripcion": "Jean Mom Stone Wash para mujer, disponible en color salmon. Un pantal\u00f3n moderno y vers\u00e1til que se adapta a tu estilo casual. Perfecto para crear conjuntos frescos y relajados en cualquier ocasi\u00f3n. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda"
+    },
+    {
+        "descuento": false,
+        "id": 8,
+        "nombre": "POLLERA DENIM NOAH",
+        "tipo": "vestido",
+        "genero": "mujer",
+        "colores": [
+            "rosa"
+        ],
+        "precio": 46000,
+        "img": ".\/imagenes\/catalogo\/mujer\/7.webp",
+        "descripcion": "Pollera Denim Noah para mujer, disponible en color rosa. Una prenda encantadora que a\u00f1ade un toque femenino y fresco a tu guardarropa. Perfecta para crear looks casuales y juveniles en cualquier temporada. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 9,
+        "nombre": "VESTIDO ALANNA",
+        "tipo": "vestido",
+        "genero": "mujer",
+        "colores": [
+            "rosa",
+            "amarillo"
+        ],
+        "precio": 59000,
+        "img": ".\/imagenes\/catalogo\/mujer\/8.webp",
+        "descripcion": "Vestido Alanna para mujer, disponible en rosa y amarillo. Una opci\u00f3n vibrante y llamativa para destacar en cualquier ocasi\u00f3n. Este vestido agrega un toque de alegr\u00eda y estilo a tu guardarropa, manteni\u00e9ndote a la moda y abrigada durante el invierno. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.4,
+        "descuento": true,
+        "id": 10,
+        "nombre": "POLLERA CAROL",
+        "tipo": "vestido",
+        "genero": "mujer",
+        "colores": [
+            "rosa",
+            "amarillo"
+        ],
+        "precio": 59000,
+        "img": ".\/imagenes\/catalogo\/mujer\/9.webp",
+        "descripcion": "Pollera Carol para mujer, disponible en rosa y amarillo. Una prenda encantadora que a\u00f1ade un toque de frescura y estilo a tu guardarropa. Perfecta para crear looks femeninos y vers\u00e1tiles en cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 11,
+        "nombre": "VESTIDO DAMI",
+        "tipo": "vestido",
+        "genero": "mujer",
+        "colores": [
+            "salmon",
+            "rosa"
+        ],
+        "precio": 39000,
+        "img": ".\/imagenes\/catalogo\/mujer\/10.webp",
+        "descripcion": "Vestido Dami para mujer, disponible en color salmon y rosa. Una prenda elegante y vers\u00e1til que a\u00f1ade un toque de sofisticaci\u00f3n a tu estilo. Perfecto para ocasiones especiales o eventos formales, este vestido te har\u00e1 destacar con su dise\u00f1o refinado. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.3,
+        "descuento": true,
+        "id": 12,
+        "nombre": "FALDA PU CON RECORTE",
+        "tipo": "vestido",
+        "genero": "mujer",
+        "colores": [
+            "negro",
+            "gris"
+        ],
+        "precio": 54000,
+        "img": ".\/imagenes\/catalogo\/mujer\/11.webp",
+        "descripcion": "Falda PU con Recorte para mujer, disponible en negro y gris. Una prenda moderna y elegante que a\u00f1ade un toque de estilo a tu vestuario. Perfecta para crear looks sofisticados y a la moda en cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 13,
+        "nombre": "POLLERA CINNIA",
+        "tipo": "vestido",
+        "genero": "mujer",
+        "colores": [
+            "salmon",
+            "negro"
+        ],
+        "precio": 39000,
+        "img": ".\/imagenes\/catalogo\/mujer\/12.webp",
+        "descripcion": "Pollera Cinnia para mujer, disponible en color salmon y negro. Una prenda vers\u00e1til y chic que a\u00f1ade un toque de estilo a tu guardarropa. Perfecta para crear conjuntos elegantes y modernos en cualquier ocasi\u00f3n. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 14,
+        "nombre": "REMERA KELLY",
+        "tipo": "remera",
+        "genero": "mujer",
+        "colores": [
+            "gris",
+            "blanco"
+        ],
+        "precio": 34000,
+        "img": ".\/imagenes\/catalogo\/mujer\/13.webp",
+        "descripcion": "Remera Kelly para mujer, disponible en gris y blanco. Una prenda b\u00e1sica y vers\u00e1til que es un imprescindible en tu armario. Perfecta para combinar con jeans, shorts o faldas en cualquier ocasi\u00f3n. Su dise\u00f1o simple y elegante te garantiza un estilo atemporal. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 15,
+        "nombre": "REMERA CLARA",
+        "tipo": "remera",
+        "genero": "mujer",
+        "colores": [
+            "salmon",
+            "rosa"
+        ],
+        "precio": 29000,
+        "img": ".\/imagenes\/catalogo\/mujer\/14.webp",
+        "descripcion": "Remera Clara para mujer, disponible en salmon y rosa. Una prenda fresca y femenina que a\u00f1ade un toque de color a tu estilo. Perfecta para combinar con jeans, shorts o faldas para un look casual y chic. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 16,
+        "nombre": "REMERA MARION MC ESCOTE V",
+        "tipo": "remera",
+        "genero": "mujer",
+        "colores": [
+            "verde",
+            "negro"
+        ],
+        "precio": 20000,
+        "img": ".\/imagenes\/catalogo\/mujer\/15.webp",
+        "descripcion": "Remera Marion MC Escote V para mujer, disponible en verde y negro. Una prenda elegante y vers\u00e1til que a\u00f1ade estilo a tu look diario. Con su escote en V, esta remera es perfecta para destacar tu figura y a\u00f1adir un toque de sofisticaci\u00f3n a tu estilo casual. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 17,
+        "nombre": "REMERA MEL",
+        "tipo": "remera",
+        "genero": "mujer",
+        "colores": [
+            "bordo",
+            "naranja"
+        ],
+        "precio": 34000,
+        "img": ".\/imagenes\/catalogo\/mujer\/16.webp",
+        "descripcion": "Remera Mel para mujer, disponible en bordo y naranja. Una prenda vibrante y llamativa que a\u00f1ade un toque de color a tu guardarropa. Perfecta para combinar con jeans, shorts o faldas para un look casual y lleno de estilo. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.2,
+        "descuento": true,
+        "id": 18,
+        "nombre": "REMERA MADY",
+        "tipo": "remera",
+        "genero": "mujer",
+        "colores": [
+            "negro",
+            "blanco"
+        ],
+        "precio": 29000,
+        "img": ".\/imagenes\/catalogo\/mujer\/17.webp",
+        "descripcion": "Remera Mady para mujer, disponible en negro y blanco. Una prenda b\u00e1sica y vers\u00e1til que es un imprescindible en tu armario. Perfecta para combinar con jeans, shorts o faldas en cualquier ocasi\u00f3n. Su dise\u00f1o simple y elegante te garantiza un estilo atemporal. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.4,
+        "descuento": true,
+        "id": 19,
+        "nombre": "REMERA RAYADA IRIA",
+        "tipo": "remera",
+        "genero": "mujer",
+        "colores": [
+            "negro",
+            "blanco"
+        ],
+        "precio": 22000,
+        "img": ".\/imagenes\/catalogo\/mujer\/18.webp",
+        "descripcion": "Remera Rayada Iria para mujer, disponible en negro y blanco. Una prenda vers\u00e1til y moderna que a\u00f1ade un toque de estilo a tu vestuario. Con su dise\u00f1o rayado, esta remera es perfecta para crear looks casuales y llenos de personalidad. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.4,
+        "descuento": true,
+        "id": 20,
+        "nombre": "PANTALON PU SURIA",
+        "tipo": "pantalon",
+        "genero": "mujer",
+        "colores": [
+            "negro"
+        ],
+        "precio": 69000,
+        "img": ".\/imagenes\/catalogo\/mujer\/19.webp",
+        "descripcion": "Pantal\u00f3n PU Suria para mujer, disponible en negro. Una prenda elegante y sofisticada que a\u00f1ade un toque moderno a tu vestuario. Perfecto para crear looks vers\u00e1tiles, este pantal\u00f3n es ideal para ocasiones formales o informales. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 21,
+        "nombre": "PANTALON VERA",
+        "tipo": "pantalon",
+        "genero": "mujer",
+        "colores": [
+            "negro"
+        ],
+        "precio": 45000,
+        "img": ".\/imagenes\/catalogo\/mujer\/20.webp",
+        "descripcion": "Pantal\u00f3n Vera para mujer, disponible en negro. Una prenda vers\u00e1til y elegante que es un b\u00e1sico imprescindible en tu guardarropa. Perfecto para crear looks casuales o formales, este pantal\u00f3n te brinda comodidad y estilo en cualquier ocasi\u00f3n. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "porcentaje": 0.4,
+        "descuento": true,
+        "id": 22,
+        "nombre": "PANTALON DIANA",
+        "tipo": "pantalon",
+        "genero": "mujer",
+        "colores": [
+            "rosa",
+            "violeta"
+        ],
+        "precio": 49000,
+        "img": ".\/imagenes\/catalogo\/mujer\/21.webp",
+        "descripcion": "Pantal\u00f3n Diana para mujer, disponible en rosa y violeta. Una prenda moderna y femenina que a\u00f1ade un toque de color a tu estilo. Perfecto para crear looks frescos y juveniles, este pantal\u00f3n es ideal para cualquier ocasi\u00f3n casual. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 23,
+        "nombre": "POLERA SOFT",
+        "tipo": "abrigo",
+        "genero": "mujer",
+        "colores": [
+            "rosa",
+            "rojo"
+        ],
+        "precio": 62000,
+        "img": ".\/imagenes\/catalogo\/mujer\/22.webp",
+        "descripcion": "Polera Soft para mujer, disponible en rosa y rojo. Una prenda acogedora y elegante que te mantendr\u00e1 abrigada con estilo. Perfecta para los d\u00edas frescos de oto\u00f1o o invierno, esta polera es una opci\u00f3n vers\u00e1til para combinar con tus conjuntos favoritos. Fabricada con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 24,
+        "nombre": "SWEATER FRANCESCA",
+        "tipo": "abrigo",
+        "genero": "mujer",
+        "colores": [
+            "marron",
+            "azul"
+        ],
+        "precio": 53000,
+        "img": ".\/imagenes\/catalogo\/mujer\/23.webp",
+        "descripcion": "Sweater Francesca para mujer, disponible en marr\u00f3n y azul. Una prenda c\u00e1lida y elegante que a\u00f1ade un toque de estilo a tu guardarropa de invierno. Perfecto para combinar con pantalones o faldas, este sweater es una opci\u00f3n vers\u00e1til para cualquier ocasi\u00f3n. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 25,
+        "nombre": "SWEATER SOFT",
+        "tipo": "abrigo",
+        "genero": "mujer",
+        "colores": [
+            "celeste",
+            "azul"
+        ],
+        "precio": 59000,
+        "img": ".\/imagenes\/catalogo\/mujer\/24.webp",
+        "descripcion": "Sweater Soft para mujer, disponible en celeste y azul. Una prenda suave y acogedora que te mantendr\u00e1 abrigada con estilo durante los d\u00edas m\u00e1s fr\u00edos. Perfecto para combinar con tus jeans o leggings favoritos, este sweater es una opci\u00f3n vers\u00e1til y elegante para cualquier ocasi\u00f3n. Fabricado con materiales de alta calidad para garantizar durabilidad y comodidad durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 26,
+        "nombre": "BUZO ARIANA",
+        "tipo": "abrigo",
+        "genero": "mujer",
+        "colores": [
+            "negro",
+            "blanco"
+        ],
+        "precio": 56000,
+        "img": ".\/imagenes\/catalogo\/mujer\/25.webp",
+        "descripcion": "Buzo Ariana para mujer, disponible en negro y blanco. Una prenda vers\u00e1til y moderna que te brinda estilo y comodidad en cualquier ocasi\u00f3n. Perfecto para crear looks casuales y urbanos, este buzo es una opci\u00f3n elegante para tu d\u00eda a d\u00eda. Fabricado con materiales de alta calidad para garantizar durabilidad y confort durante todo el d\u00eda."
+    },
+    {
+        "descuento": false,
+        "id": 101,
+        "nombre": "remera power ranger",
+        "tipo": "remera",
+        "genero": "ninos",
+        "colores": [],
+        "precio": 1000,
+        "img": ".\/imagenes\/catalogo\/ni\u00f1o\/1.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, nisi ac tempor interdum, lectus felis malesuada nisi, eu condimentum nulla lectus sed lorem. Duis quis libero vitae odio ultricies commodo. Vivamus at felis in odio lacinia tempor."
+    },
+    {
+        "descuento": false,
+        "id": 100,
+        "nombre": "remera de floricienta",
+        "tipo": "remera",
+        "genero": "ninos",
+        "colores": [],
+        "precio": 18000,
+        "img": ".\/imagenes\/catalogo\/ni\u00f1o\/2.jpg",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, nisi ac tempor interdum, lectus felis malesuada nisi, eu condimentum nulla lectus sed lorem. Duis quis libero vitae odio ultricies commodo. Vivamus at felis in odio lacinia tempor."
+    }
+]

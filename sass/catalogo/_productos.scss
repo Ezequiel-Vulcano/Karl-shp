@@ -1,8 +1,61 @@
 main {
     max-width: 1500px !important;
-    .catalogo_productos {
-        background-color: red !important;
     
-        
+    .catalogo_productos {
+        div {
+            .filtro_categorias {
+                div {
+                    div {
+                        .filtro_categorias_contenedores {
+                            border-bottom: 1px solid var(--color-6);
+                            padding-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contenedor_productos {
+            div {
+                .tarjeta_catalogo {
+                    div {
+                        ul {
+                            padding: 0px;
+                            position: relative;
+
+                            li {
+                                h3 {
+                                    font-size: 1.2rem;
+                                    color: var(--color-3);
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .descuento {
+                                color: var(--fondo-1);
+                                font-size: 1rem;
+                                position: absolute;
+                                top: 30px;
+                                left: 70px;
+                                text-decoration: line-through;
+                            }
+
+                            .descuento-aplicado {
+                                position: absolute;
+                                top: 50px;
+                                color: var(--color-3);
+                                font-size: 1.8rem;
+                            }
+
+                            .descuento-negativo {
+                                font-size: 1.8rem;
+                                color: var(--fondo-3);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+

@@ -24,23 +24,50 @@ function filtrar_por_genero(string $genero, array $productos):array{
 */
 function mostrar_tarjetas(array $productos):void{
     foreach($productos as $valor){?>
-        <div class="card col-xl-4">
-            <img src="<?php echo $valor["img"]?>" class="img-fluid" alt="foto de <?php echo $valor["nombre"]?>">
-            <div class="card-body">
-                <h5 class="card-title"><?php echo $valor["nombre"]?></h5>
-                <p class="card-text"><?php echo $valor["descripcion"]?></p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?php foreach($valor["colores"] as $color){echo $color;}?></li>
-                <li class="list-group-item">tipo</li>
-                <li class="list-group-item">precio</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Comprar</a>
+        <div class="col-xl-4 p-xl-4 tarjeta_catalogo mb-4">
+            <div>
+                <div>
+                    <a href="./index.php?home=detalle_productos&id=<?php echo $valor["id"]?>" class="text-decoration-none">
+                        <img src="<?php echo $valor["img"]?>" class="img-fluid" alt="foto de <?php echo $valor["nombre"]?>">
+                    </a>
+                </div>
+                
+                <ul class="w-100">
+                    <li><h3 class="text-start mt-3"><?php echo $valor["nombre"]?></h3></li>
+                    
+                    <li>
+                        <!-- FUNCION QUE SE ENCARGA DE APLICAR EL DESCUENTO SI ES QUE EL PRODUCTO TIENE LA VARIABLE DESCUENTO EN TRUE -->
+                        <?php if($valor["descuento"]) { ?>
+                            
+                            <li class="w-100 text-start descuento"><?php echo '$ ' . number_format($valor["precio"], 0, ',', '.'); ?></li>
+                            <li class="w-100 text-start descuento-aplicado"><?php echo '$ ' . number_format(($valor["precio"] - (($valor["precio"])*$valor["porcentaje"])), 0, ',', '.'). $valor["porcentaje"]."OFF"?></li>
+                        <?php
+                        } else {  
+                        ?>
+                            <li class="w-100 text-start descuento-negativo"><?php echo '$ ' . number_format($valor["precio"], 0, ',', '.'); ?></li>
+                        <?php
+                        }
+                        ?>
+                       
+                    </li>
+                    
+                </ul>
             </div>
         </div>
     <?php } 
 }
 
+/**
+ * Funcion que se encarga de traerme el producto seleccionado por el usuario a traves del ID.
+ * @param array es el array que contiene todo mi catalogo completo.
+ * @param string es el ID que me sirve para rastrear el producto dentro de mi catalogo.
+*/
+function buscar_producto(string $id, array $catalogo){
+    foreach($catalogo as $valor){
+        if($valor["id"] == $id) {
+            return  $valor;
+        };
+    };
 
-?>
+    return false;
+};
