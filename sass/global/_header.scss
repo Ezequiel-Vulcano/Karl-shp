@@ -1,5 +1,9 @@
 header {
+    max-width: 100% !important;
+
     > div:first-of-type{
+        max-width: 1320px;
+        margin: auto;
          div:last-of-type{
             i:first-of-type{
                 font-size: 1.3rem;
@@ -18,6 +22,7 @@ header {
             }
             
         }
+
     }
 
 

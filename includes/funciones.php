@@ -24,14 +24,13 @@ function filtrar_por_genero(string $genero, array $productos):array{
 */
 function mostrar_tarjetas(array $productos):void{
     foreach($productos as $valor){?>
-        <div class="col-xl-4 p-xl-4 tarjeta_catalogo mb-4">
+        <div class="col-xl-4 p-xl-4 tarjeta_catalogo mb-4 mt-0">
             <div>
-                <div>
-                    <a href="./index.php?home=detalle_productos&id=<?php echo $valor["id"]?>" class="text-decoration-none">
+                <a href="./index.php?home=detalle_productos&id=<?php echo $valor["id"]?>&genero=<?php echo $valor["genero"]?>" class="text-decoration-none">
+                    <div>
                         <img src="<?php echo $valor["img"]?>" class="img-fluid" alt="foto de <?php echo $valor["nombre"]?>">
-                    </a>
-                </div>
-                
+                    </div>
+                </a>
                 <ul class="w-100">
                     <li><h3 class="text-start mt-3"><?php echo $valor["nombre"]?></h3></li>
                     
@@ -39,8 +38,9 @@ function mostrar_tarjetas(array $productos):void{
                         <!-- FUNCION QUE SE ENCARGA DE APLICAR EL DESCUENTO SI ES QUE EL PRODUCTO TIENE LA VARIABLE DESCUENTO EN TRUE -->
                         <?php if($valor["descuento"]) { ?>
                             
-                            <li class="w-100 text-start descuento"><?php echo '$ ' . number_format($valor["precio"], 0, ',', '.'); ?></li>
-                            <li class="w-100 text-start descuento-aplicado"><?php echo '$ ' . number_format(($valor["precio"] - (($valor["precio"])*$valor["porcentaje"])), 0, ',', '.'). $valor["porcentaje"]."OFF"?></li>
+                            <li class="w-100 text-start descuento"><?php echo '$ ' . number_format($valor["precio"], 0, ',', '.')?></li>
+                            <li class="w-100 text-start descuento-aplicado"><?php echo '$ ' . number_format(($valor["precio"] - (($valor["precio"])*$valor["porcentaje"])), 0, ',', '.')?> 
+                            </li>
                         <?php
                         } else {  
                         ?>
@@ -71,3 +71,43 @@ function buscar_producto(string $id, array $catalogo){
 
     return false;
 };
+
+
+/**
+ * Funcion que se encarga de mostrar productos relacionados como referencia para el usuario.
+ * @param array es el array que contiene todo mi catalogo completo.
+ * @param string es el genero por el que voy a filtrar.
+ * @return array devuelve un array con todos los productos del genero seleccionado.
+*/
+function productos_relacionados(array $catalogoCompleto, string $generoFiltrar ):array{
+    $productos_mostrar = [];
+
+    foreach($catalogoCompleto as $producto_agregado){
+        if($producto_agregado["genero"] == $generoFiltrar){
+            $productos_mostrar[] = $producto_agregado;
+        }
+    }
+
+    return $productos_mostrar;
+}
+
+/**
+ * Función que selecciona tres productos únicos del array $productos_mostrar.
+ * @param array $productos_mostrar El array de productos a seleccionar.
+ * @return array Un array con tres productos únicos seleccionados.
+ */
+function seleccionar_tres_productos(array $productos_mostrar): array {
+    $productos_seleccionados = [];
+    $indices_utilizados = [];
+
+    while (count($productos_seleccionados) < 3) {
+        $indice_aleatorio = rand(0, count($productos_mostrar) - 1);
+
+        if (!in_array($indice_aleatorio, $indices_utilizados)) {
+            $productos_seleccionados[] = $productos_mostrar[$indice_aleatorio];
+            $indices_utilizados[] = $indice_aleatorio;
+        }
+    }
+
+    return $productos_seleccionados;
+}

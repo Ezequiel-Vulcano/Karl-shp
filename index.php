@@ -123,7 +123,20 @@
                 </span>
             </div>
         </div>
-        
+        <section class="section_1 row mt-4 mb-5">
+            <div class="contenedor-1 contenedor col-12 col-md-4 text-center">
+                <span class="d-block">Envío y Devoluciones Gratuitas</span>
+                <span>Compra ahora</span>
+            </div>
+            <div class="contenedor-2 contenedor col-12 col-md-4 text-center">
+                <span class="d-block">20% en todos los vestidos</span>
+                <span>Aprovecha el Codigo: Colorlib</span>
+            </div>
+            <div class="contenedor-3 contenedor col-12 col-md-4 text-center">
+                <span class="d-block">20% para estudiantes</span>
+                <span>Aprovecha el Codigo: StudentOff</span>
+            </div>
+        </section>
     </header>
 
     <main class="container-fluid index">
