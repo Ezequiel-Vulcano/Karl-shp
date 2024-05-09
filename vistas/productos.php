@@ -5,13 +5,18 @@ $valoresGet = $_GET;
     - Mujeres
     _ Hombres
 */
-require_once("includes/funciones.php");
+require_once("includes/funciones.php"); // Traigo mi archivo con funciones,
+require_once("clases/Catalogo.php"); // Traigo mi archivo de clases con el CATALOGO DE PRODUCTOS,
 
-$catalogoJSON = file_get_contents("./js/catalogo.json");
-$catalogo = json_decode( $catalogoJSON, true );
+$objetoCatalogo = new Catalogo(); // Creo la instancia para trabajar con mi objeto.
+$catalogoCompleto = $objetoCatalogo->catalogo_completo(); // Dentro de mi instancia utilizo el metodo que me devuelve el catalogo completo.
+
 ?>
 
+<!------------------------    CONTENIDO HTML    ------------------------>
+
 <section class="row catalogo_productos">
+
     <!-- SECCION DE FILTROS POR CATEGORIA -->
     <div class="col-xl-3">
         <h2>Categorias</h2>
@@ -161,21 +166,21 @@ $catalogo = json_decode( $catalogoJSON, true );
             </div>
         </div>
     </div>
+
     <!-- VENTANA QUE MUESTRA TODOS LOS PRODUCTOS -->
     <div class="d-flex col-xl-9 contenedor_productos">
         <div class="row d-flex">
             <?php
 
-
             if (isset($valoresGet["genero"])) {
                 /* Filtro todos los productos que tengo por genero */
-                $productos_filtrados = filtrar_por_genero($valoresGet["genero"], $catalogo);
+                $productos_filtrados = $objetoCatalogo->filtrar_por_genero($valoresGet["genero"], $catalogoCompleto);
 
                 /* Muestro las tarjetas filtradas */
-                mostrar_tarjetas($productos_filtrados);
+                $objetoCatalogo->mostrar_tarjetas($productos_filtrados);
             } else {
                 /*El usuario Ingresa al catalogo completo de productos al ingresar en esta parte del codigo*/
-                mostrar_tarjetas($catalogo);
+                $objetoCatalogo->mostrar_tarjetas($catalogoCompleto);
             }
             ?>
         </div>

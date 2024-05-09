@@ -20,6 +20,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 27,
         "nombre": "Chomba lisa roja",
         "tipo": "chomba",
@@ -92,6 +93,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 31,
         "nombre": "Remera mixta",
         "tipo": "remera",
@@ -143,6 +145,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 34,
         "nombre": "Remera mixta larga",
         "tipo": "remera",
@@ -161,6 +164,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 35,
         "nombre": "Remera estampada simple",
         "tipo": "remera",
@@ -176,6 +180,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 36,
         "nombre": "PANTAL\u00d3N SPORT BEIGE",
         "tipo": "pantalon",
@@ -244,6 +249,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 49,
         "nombre": "PANTAL\u00d3N DE GABARDINA SPORT LISO BEIGE",
         "tipo": "pantalon",
@@ -294,6 +300,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 52,
         "nombre": "SWEATER ESCOTE EN V AZULINO",
         "tipo": "abrigo",
@@ -346,6 +353,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 55,
         "nombre": "SWEATER ESCOTE EN V GRIS CLARO MELANGE",
         "tipo": "abrigo",
@@ -379,6 +387,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 57,
         "nombre": "BUZO CAMPERA R\u00daSTICO GRIS MELANGE",
         "tipo": "abrigo",
@@ -394,6 +403,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 2,
         "nombre": "SWEATER LYNN RAYADO",
         "tipo": "abrigo",
@@ -411,6 +421,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 3,
         "nombre": "PANTAL\u00d3N BOHO ARETHA",
         "tipo": "pantalon",
@@ -459,6 +470,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 6,
         "nombre": "JEAN MOM COLOR",
         "tipo": "pantalon",
@@ -473,6 +485,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 7,
         "nombre": "JEAN MOM STONE WASH",
         "tipo": "pantalon",
@@ -487,6 +500,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 8,
         "nombre": "POLLERA DENIM NOAH",
         "tipo": "vestido",
@@ -501,6 +515,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 9,
         "nombre": "VESTIDO ALANNA",
         "tipo": "vestido",
@@ -564,6 +579,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 13,
         "nombre": "POLLERA CINNIA",
         "tipo": "vestido",
@@ -611,6 +627,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 16,
         "nombre": "REMERA MARION MC ESCOTE V",
         "tipo": "remera",
@@ -689,6 +706,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 21,
         "nombre": "PANTALON VERA",
         "tipo": "pantalon",
@@ -719,6 +737,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 23,
         "nombre": "POLERA SOFT",
         "tipo": "abrigo",
@@ -734,6 +753,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 24,
         "nombre": "SWEATER FRANCESCA",
         "tipo": "abrigo",
@@ -749,6 +769,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 25,
         "nombre": "SWEATER SOFT",
         "tipo": "abrigo",
@@ -764,6 +785,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 26,
         "nombre": "BUZO ARIANA",
         "tipo": "abrigo",
@@ -779,6 +801,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 101,
         "nombre": "remera power ranger",
         "tipo": "remera",
@@ -791,6 +814,7 @@
     },
     {
         "descuento": false,
+        "porcentaje": 0,
         "id": 100,
         "nombre": "remera de floricienta",
         "tipo": "remera",
