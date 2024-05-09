@@ -1,0 +1,38 @@
+main {
+    max-width: 1500px !important;
+}
+
+main .catalogo_productos div .filtro_categorias div div .filtro_categorias_contenedores {
+    border-bottom: 1px solid var(--color-6);
+    padding-bottom: 1rem;
+}
+
+main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul {
+    padding: 0px;
+    position: relative;
+}
+
+main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul li h3 {
+    font-size: 1.3rem;
+    color: var(--color-3);
+    font-weight: 400;
+}
+
+main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul .descuento {
+    color: var(--fondo-1);
+    font-size: 1.1rem;
+    position: absolute;
+    left: 120px;
+    text-decoration: line-through;
+}
+
+main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul .descuento-aplicado {
+    position: absolute;
+    color: var(--color-3);
+    font-size: 1.8rem;
+}
+
+main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul .descuento-negativo {
+    font-size: 1.8rem;
+    color: var(--fondo-3);
+}

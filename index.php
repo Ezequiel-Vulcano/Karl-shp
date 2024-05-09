@@ -8,15 +8,15 @@
         ],
         "inicio" => [
             "ruta" => "inicio.php",
-            "titulo" => "Inicio"
+            "titulo" => "Inicio",
         ],
         "productos" => [
             "ruta" => "productos.php",
-            "titulo" => "Productos"
+            "titulo" => "Productos",
         ],
         "detalle_productos" => [
             "ruta" => "detalle_producto.php",
-            "titulo" => "Detalle de Producto"
+            "titulo" => "Detalle de Producto",
         ]
     ];
 
@@ -37,8 +37,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <!--ANIMACION AOS-->
+    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/vistas/detalle_productos.css">
+    <link rel="stylesheet" href="./css/vistas/inicio.css">
+    <link rel="stylesheet" href="./css/vistas/productos.css">
 
-    <link rel="stylesheet" href="./sass/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>
         <?php 

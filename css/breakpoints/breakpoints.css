@@ -1,0 +1,13 @@
+/*
+@media (min-width: 350px) {
+    .index .section_5 .contenedor-padre .hijo div p {
+    min-height: auto;
+    width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .section_4-maximo .section_4 > div {
+    height: 340px;
+    min-width: 550px;
+}*/
