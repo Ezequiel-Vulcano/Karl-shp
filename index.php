@@ -1,5 +1,8 @@
 <?php 
+    require_once("includes/funciones.php");
+
     $valoresGet = $_GET;
+    //echo_pre($valoresGet);
 
     $acceso_permitido = [
         "404" => [
@@ -17,6 +20,14 @@
         "detalle_productos" => [
             "ruta" => "detalle_producto.php",
             "titulo" => "Detalle de Producto",
+        ],
+        "form" => [
+            "ruta" => "form.php",
+            "titulo" => "Formulario",
+        ],
+        "datos" => [
+            "ruta" => "datos.php",
+            "titulo" => "Registro Correcto",
         ]
     ];
 
@@ -42,6 +53,10 @@
     <link rel="stylesheet" href="./css/vistas/detalle_productos.css">
     <link rel="stylesheet" href="./css/vistas/inicio.css">
     <link rel="stylesheet" href="./css/vistas/productos.css">
+    <link rel="stylesheet" href="./css/vistas/form.css">
+    <link rel="stylesheet" href="./css/vistas/datos.css">
+    <link rel="stylesheet" href="./css/vistas/error.css">
+
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>
@@ -60,9 +75,9 @@
         <div class="row">
             <h1 class="d-none">Karl-Moda</h1>
             <div class="col-4 mt-5 d-flex justify-content-between col-lg-6">
-                <div class="">
+                <a href="index.php?home=inicio">
                     <img src="./imagenes/header/logo.png" alt="logo de la marca" class="img-fluid">
-                </div>
+                </a>
             </div>
             <div class="col-4 mt-5 col-lg-6">
                 <div class="col-4 d-flex justify-content-end align-items-center">
@@ -89,15 +104,15 @@
             <div class="col-md-9 mt-md-5 d-md-block d-none col-lg-7 d-flex">
                 <ul class="d-flex p-0 ">
                     <li>
-                        <a href="index.php?home=inicio">
-                            Inicio
-                        </a>
+                        <?php  
+                            resaltado($valoresGet['home'], "inicio", "Inicio") 
+                        ?>    
                     </li>
                     <li>
                         <div class="btn-group">
-                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Productos
-                            </button>
+                            <?php  
+                                resaltado_boton($valoresGet['home'], "productos", "PRODUCTOS") 
+                            ?> 
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="index.php?home=productos&genero=niños">Niños</a></li>
                                 <li><a class="dropdown-item" href="index.php?home=productos&genero=hombre">Hombres</a></li>
@@ -109,15 +124,14 @@
                     </li>
                     
                     <li>
-                    <a href="index.php?home=404">
-                            404
-                        </a>
+                        <?php  
+                            resaltado($valoresGet['home'], "404", "404") 
+                        ?>                                                    
                     </li>
                     <li>
-                        page 1
-                    </li>
-                    <li>
-                        page 1
+                        <?php  
+                            resaltado($valoresGet['home'], "form", "Formulario") 
+                        ?>   
                     </li>
                 </ul>
             </div>

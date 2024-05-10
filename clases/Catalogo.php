@@ -487,6 +487,7 @@ class Catalogo{
 
         return $this;
     }
+    
 }
 
 

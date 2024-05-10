@@ -1,0 +1,23 @@
+.fondo-datos{
+    min-height: 600px;
+}
+
+.fondo-datos div h2 {
+    font-size: 2.5rem;
+}
+
+.fondo-datos div h2 span{
+    color: var(--fondo-1);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fondo-datos div p{
+    color: var(--color-2);
+    font-size: 1.2rem;
+}
+
+.fondo-datos div p:first-of-type{
+    font-size: 1.5rem;
+    color: var(--color-3);
+}
