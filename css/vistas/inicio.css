@@ -1,3 +1,20 @@
+/*____________________ NOSOTROS ____________________*/
+
+.nosotros div h2 {
+  border-bottom: 6px solid var(--fondo-1);
+  display: inline-block;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.nosotros h3 {
+  color: var(--color-3);
+}
+
+.nosotros p {
+  color: var(--color-2);
+}
+
 /*____________________ SECCION 2 ____________________*/
 
 .section_2 .carrusel {
@@ -268,7 +285,7 @@
   color: var(--color-2);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  min-height: 300px;
+  /*min-height: 300px;*/
 }
 
 .section_5 .contenedor-padre .hijo div .foto_reseña {

@@ -1,54 +1,59 @@
-<?php 
-    require_once("includes/funciones.php");
+<?php
+require_once("includes/funciones.php");
 
-    $valoresGet = $_GET;
-    //echo_pre($valoresGet);
+$valoresGet = $_GET;
+//echo_pre($valoresGet);
 
-    $acceso_permitido = [
-        "404" => [
-            "ruta" => "404.php",
-            "titulo" => "Error 404: pagina no encontrada"
-        ],
-        "inicio" => [
-            "ruta" => "inicio.php",
-            "titulo" => "Inicio",
-        ],
-        "productos" => [
-            "ruta" => "productos.php",
-            "titulo" => "Productos",
-        ],
-        "detalle_productos" => [
-            "ruta" => "detalle_producto.php",
-            "titulo" => "Detalle de Producto",
-        ],
-        "form" => [
-            "ruta" => "form.php",
-            "titulo" => "Formulario",
-        ],
-        "datos" => [
-            "ruta" => "datos.php",
-            "titulo" => "Registro Correcto",
-        ]
-    ];
+$acceso_permitido = [
+    "404" => [
+        "ruta" => "404.php",
+        "titulo" => "Error 404: pagina no encontrada"
+    ],
+    "inicio" => [
+        "ruta" => "inicio.php",
+        "titulo" => "Inicio",
+    ],
+    "productos" => [
+        "ruta" => "productos.php",
+        "titulo" => "Productos",
+    ],
+    "detalle_productos" => [
+        "ruta" => "detalle_producto.php",
+        "titulo" => "Detalle de Producto",
+    ],
+    "form" => [
+        "ruta" => "form.php",
+        "titulo" => "Formulario",
+    ],
+    "datos" => [
+        "ruta" => "datos.php",
+        "titulo" => "Registro Correcto",
+    ],
+    "alumno" => [
+        "ruta" => "alumno.php",
+        "titulo" => "Alumno",
+    ],
+];
 
-    if(isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_permitido)){
-        $vista = $valoresGet["home"];
-    } else {
-        $vista = "inicio.php";
-    };
+if (isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_permitido)) {
+    $vista = $valoresGet["home"];
+} else {
+    $vista = "inicio.php";
+};
 
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d906409094.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+
     <!--ANIMACION AOS-->
-    
+
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/vistas/detalle_productos.css">
     <link rel="stylesheet" href="./css/vistas/inicio.css">
@@ -56,19 +61,21 @@
     <link rel="stylesheet" href="./css/vistas/form.css">
     <link rel="stylesheet" href="./css/vistas/datos.css">
     <link rel="stylesheet" href="./css/vistas/error.css">
+    <link rel="stylesheet" href="./css/vistas/alumno.css">
 
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>
-        <?php 
-            if($vista == "inicio.php"){
-                echo "Inicio";
-            } else {
-                echo $acceso_permitido[$vista]["titulo"];
-            }
+        <?php
+        if ($vista == "inicio.php") {
+            echo "Inicio";
+        } else {
+            echo $acceso_permitido[$vista]["titulo"];
+        }
         ?>
     </title>
 </head>
+
 <body>
 
     <header class="container">
@@ -81,9 +88,58 @@
             </div>
             <div class="col-4 mt-5 col-lg-6">
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <i class="fa-solid fa-bag-shopping me-3"></i>                
-                    <i class="fa-solid fa-bars p-2"></i>
+                    <i class="fa-solid fa-bag-shopping me-3"></i>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa-solid fa-bars p-2 navbar-toggler-icon"></i>
+                        </span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header m-0 ">
+                            <span class="offcanvas-title m-0" id="offcanvasNavbarLabel">MENU</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body m-0">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 m-0">
+                                <li class="m-0">
+                                    <?php
+                                    resaltado($valoresGet['home'], "inicio", "Inicio")
+                                    ?>
+                                </li>
+                                <li class="m-0">
+                                    <div class="btn-group">
+                                        <?php
+                                            resaltado_boton($valoresGet['home'], "productos", "PRODUCTOS")
+                                        ?>
+                                        <ul class="dropdown-menu">
+                                            <!-- SE AGREGA LA SECCION NIÑOS PROXIMAMENTE -->
+                                            <!--<li><a class="dropdown-item" href="index.php?home=productos&genero=niños">Niños</a></li> -->
+                                            <li><a class="dropdown-item" href="index.php?home=productos&genero=hombre">Hombres</a></li>
+                                            <li><a class="dropdown-item" href="index.php?home=productos&genero=mujer">Mujeres</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="index.php?home=productos">Catalogo completo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="m-0">
+                                    <?php
+                                    resaltado($valoresGet['home'], "alumno", "Alumno")
+                                    ?>
+                                </li>
+                                <li class="m-0">
+                                    <?php
+                                    resaltado($valoresGet['home'], "form", "Formulario")
+                                    ?>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div class="mt-5 col-md-5 col-lg-2">
                 <i class="fa-brands fa-facebook me-3"></i>
@@ -104,34 +160,37 @@
             <div class="col-md-9 mt-md-5 d-md-block d-none col-lg-7 d-flex">
                 <ul class="d-flex p-0 ">
                     <li>
-                        <?php  
-                            resaltado($valoresGet['home'], "inicio", "Inicio") 
-                        ?>    
+                        <?php
+                        resaltado($valoresGet['home'], "inicio", "Inicio")
+                        ?>
                     </li>
                     <li>
                         <div class="btn-group">
-                            <?php  
-                                resaltado_boton($valoresGet['home'], "productos", "PRODUCTOS") 
-                            ?> 
+                            <?php
+                            resaltado_boton($valoresGet['home'], "productos", "PRODUCTOS")
+                            ?>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.php?home=productos&genero=niños">Niños</a></li>
+                                <!-- SE AGREGA LA SECCION NIÑOS PROXIMAMENTE -->
+                                <!--<li><a class="dropdown-item" href="index.php?home=productos&genero=niños">Niños</a></li> -->
                                 <li><a class="dropdown-item" href="index.php?home=productos&genero=hombre">Hombres</a></li>
                                 <li><a class="dropdown-item" href="index.php?home=productos&genero=mujer">Mujeres</a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="index.php?home=productos">Catalogo completo</a></li>
                             </ul>
                         </div>
                     </li>
-                    
+
                     <li>
-                        <?php  
-                            resaltado($valoresGet['home'], "404", "404") 
-                        ?>                                                    
+                        <?php
+                        resaltado($valoresGet['home'], "alumno", "Alumno")
+                        ?>
                     </li>
                     <li>
-                        <?php  
-                            resaltado($valoresGet['home'], "form", "Formulario") 
-                        ?>   
+                        <?php
+                        resaltado($valoresGet['home'], "form", "Formulario")
+                        ?>
                     </li>
                 </ul>
             </div>
@@ -158,19 +217,19 @@
     </header>
 
     <main class="container-fluid index">
-        <?php 
-            if(array_key_exists($vista, $acceso_permitido)){
-                require_once("vistas/$vista.php");
-            } else {
-                require_once("vistas/404.php");
-            }
+        <?php
+        if (array_key_exists($vista, $acceso_permitido)) {
+            require_once("vistas/$vista.php");
+        } else {
+            require_once("vistas/404.php");
+        }
         ?>
     </main>
 
     <footer class="mt-5 pt-4 container-fluid">
         <div class="row">
             <div class="col-12 col-md-5 col-lg-3 d-flex flex-column align-items-center align-items-sm-start ps-sm-5 mt-lg-5 mt-md-5">
-                <img src="./imagenes/header/logo.png" alt="logo de la marca" >
+                <img src="./imagenes/header/logo.png" alt="logo de la marca">
                 <p class="text-center text-md-start mt-2 mb-4">
                     © 2024 Progresive Web Apps. Todos los derechos reservados.
                 </p>
@@ -193,7 +252,7 @@
                         <a href="#">Contacto</a>
                     </li>
                 </ul>
-            </div> 
+            </div>
             <div class="col-12 col-md-4 col-sm-6 col-lg-2 mt-sm-5 footer-lista-2"> <!-- LISTA DE ENLACES 2 -->
                 <ul>
                     <li>
@@ -236,16 +295,19 @@
                 </a>
             </div>
         </div>
-        
+
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
     <!--ANIMACION AOS-->
     <!--
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="./js/index.js"></script> -->
+        -->
 </body>
+
 </html>

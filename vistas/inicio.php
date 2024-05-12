@@ -1,3 +1,13 @@
+<section class="row nosotros">
+    <div class="col-12 d-flex justify-content-center mb-2">
+        <h2 class="text-center fs-1">Quienes somos</h2>
+    </div>
+    <h3 class="col-12 text-center fs-5 mt-3">¡Bienvenido a Karl Fashion!</h3>
+    <p class="col-12 col-xl-7 text-center mt-5 mb-5">
+    En <strong>Karl Fashion</strong>, nos apasiona la moda y creemos en la expresión personal a través de la ropa. Ofrecemos una amplia selección de prendas de alta calidad para hombres y mujeres que buscan destacar su estilo único en cualquier ocasión. Nos comprometemos a proporcionar una experiencia de compra excepcional y a ayudarte a encontrar el conjunto perfecto para cada ocasión.
+    </p>
+</section>
+
 <section class="section_2 row">
     <div class="col-12 carrusel d-flex align-items-center">
         <div>
@@ -25,6 +35,12 @@
     </div>
 </section>
 
+<!--
+    LA SECCION SE USARA EN UN FUTURO CUANDO PUEDA ENLAZAR LAS FECHAS DE LOS PRODUCTOS DE LA BASE DE DATOS CON EL ARCHIVO.
+    PARA TOMAR COMO REFERENCIA AQUELLOS PRODUCTOS QUE ALLAN SIDO AÑADIDOS HACE 1 MES Y SE MUESTREN DINAMICAMENTE EN LA PAGINA.
+*
+*
+*
 <div class="d-flex justify-content-center">
     <section class="section_3 row mt-5 p-2">
         <h2 class="col-12 text-center mb-5 mt-5">Recien añadidos</h2>
@@ -37,11 +53,11 @@
             <span class="p-3 categorias" data-categoria="niños" id="niños">Niños</span>
         </div>
         <div class="col-12 contenedor-pruductos-nuevos d-flex flex-wrap">
-            <!--! GENERO DINAMICAMENTE LOS CATALOGOS NUEVOS -->
+            ! GENERO DINAMICAMENTE LOS CATALOGOS NUEVOS 
         </div>
     </section>
 </div>
-        
+-->
         
 <section class="section_4-maximo d-flex justify-content-center">
     <div class="section_4 row align-items-center p-4 d-md-flex flex-md-column-reverse align-content-md-end">
@@ -69,7 +85,7 @@
                     <img src="./imagenes/seccion5/quote2.png" alt="icono quote" class="mb-3">
                 </div>  
                 <p class="text-center">
-                    Quería compartir lo impresionada que estoy con Karl Fashion. Cada vez que visito su tienda en línea, encuentro piezas que realmente hablan de mi estilo y personalidad. La calidad de los materiales y la atención al detalle en cada diseño son incomparables. Karl Fashion ha elevado mi guardarropa a otro nivel, y ahora me siento más segura y elegante que nunca. ¡Definitivamente una marca en la que confiar para lucir impecable en cualquier ocasión!"
+                    "Quería compartir lo impresionada que estoy con <strong>Karl Fashion</strong>. Cada vez que visito su tienda en línea, encuentro piezas que realmente hablan de mi estilo y personalidad. La calidad de los materiales y la atención al detalle en cada diseño son incomparables. <strong>Karl Fashion</strong> ha elevado mi guardarropa a otro nivel, y ahora me siento más segura y elegante que nunca. ¡Definitivamente una marca en la que confiar para lucir impecable en cualquier ocasión!"
                 </p>
                 <div class="d-flex align-items-center flex-column">
                     <img src="./imagenes/seccion5/persona2.jpg" alt="foto de persona" class="img-fluid foto_reseña">
@@ -87,7 +103,7 @@
                     <img src="./imagenes/seccion5/quote2.png" alt="icono quote" class="mb-3">
                 </div>  
                 <p class="text-center">
-                    Desde que descubrí esta marca, mi forma de vestir y sentirme ha cambiado por completo. Cada prenda que compro tiene ese toque de elegancia y estilo que tanto busco. Karl Fashion no solo ofrece moda, ofrece una experiencia de empoderamiento y confianza. ¡Me encanta cómo me hace sentir cada vez que uso sus diseños! Recomiendo totalmente Karl Fashion a todos aquellos que buscan destacar con un estilo único y sofisticado."
+                    "Desde que descubrí esta marca, mi forma de vestir y sentirme ha cambiado por completo. Cada prenda que compro tiene ese toque de elegancia y estilo que tanto busco. <strong>Karl Fashion</strong> no solo ofrece moda, ofrece una experiencia de empoderamiento y confianza. ¡Me encanta cómo me hace sentir cada vez que uso sus diseños! Recomiendo totalmente <strong>Karl Fashion</strong> a todos aquellos que buscan destacar con un estilo único y sofisticado."
                 </p>
                 <div class="d-flex align-items-center flex-column">
                     <img src="./imagenes/seccion5/persona1.jpg" alt="foto de persona" class="img-fluid foto_reseña">
@@ -104,7 +120,7 @@
                     <img src="./imagenes/seccion5/quote2.png" alt="icono quote" class="mb-3">
                 </div>  
                 <p class="text-center">
-                    Desde que descubrí esta marca, mi guardarropa ha dado un giro de 180 grados. Cada pieza que compro es sinónimo de calidad, estilo y comodidad. Karl Fashion no solo se trata de ropa, sino de una experiencia de moda completa. Siempre me siento segura y elegante cuando llevo sus diseños. ¡Definitivamente, recomiendo Karl Fashion a todos los amantes de la moda que buscan destacar con estilo!"
+                    "Desde que descubrí esta marca, mi guardarropa ha dado un giro de <strong>180 grados</strong>. Cada pieza que compro es sinónimo de <strong>calidad</strong>, <strong>estilo</strong> y <strong>comodidad</strong>. <strong>Karl Fashion</strong> no solo se trata de ropa, sino de una experiencia de moda completa. Siempre me siento <strong>segura</strong> y <strong>elegante</strong> cuando llevo sus diseños. ¡Definitivamente, recomiendo <strong>Karl Fashion</strong> a todos los amantes de la moda que buscan destacar con estilo!"
                 </p>
                 <div class="d-flex align-items-center flex-column">
                     <img src="./imagenes/seccion5/persona3.png" alt="foto de persona" class="img-fluid foto_reseña">
