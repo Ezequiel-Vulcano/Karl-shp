@@ -87,17 +87,21 @@ if (isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_
                 </a>
             </div>
             <div class="col-4 mt-5 col-lg-6">
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                    <i class="fa-solid fa-bag-shopping me-3"></i>
+                <div class="col-4 d-flex ">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+                    <i class="fa-solid fa-bag-shopping me-3 simbolos p-2"></i>
+                    <span class="navbar-toggler m-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <i class="fa-solid fa-bars p-2 navbar-toggler-icon"></i>
+                            <i class="fa-solid fa-bars p-2 navbar-toggler-icon simbolos"></i>
                         </span>
-                    </button>
+                    </span>
+
+
+
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header m-0 ">
-                            <span class="offcanvas-title m-0" id="offcanvasNavbarLabel">MENU</span>
+                            <span class="offcanvas-title m-0 fs-3" id="offcanvasNavbarLabel">MENU</span>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body m-0">
@@ -108,24 +112,6 @@ if (isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_
                                     ?>
                                 </li>
                                 <li class="m-0">
-                                    <div class="btn-group">
-                                        <?php
-                                            resaltado_boton($valoresGet['home'], "productos", "PRODUCTOS")
-                                        ?>
-                                        <ul class="dropdown-menu">
-                                            <!-- SE AGREGA LA SECCION NIÑOS PROXIMAMENTE -->
-                                            <!--<li><a class="dropdown-item" href="index.php?home=productos&genero=niños">Niños</a></li> -->
-                                            <li><a class="dropdown-item" href="index.php?home=productos&genero=hombre">Hombres</a></li>
-                                            <li><a class="dropdown-item" href="index.php?home=productos&genero=mujer">Mujeres</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="index.php?home=productos">Catalogo completo</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                                <li class="m-0">
                                     <?php
                                     resaltado($valoresGet['home'], "alumno", "Alumno")
                                     ?>
@@ -135,13 +121,32 @@ if (isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_
                                     resaltado($valoresGet['home'], "form", "Formulario")
                                     ?>
                                 </li>
+                                <li class="m-0">
+                                    <div>
+                                        <span data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            <?php
+                                            resaltado_boton2($valoresGet['home'], "productos", "PRODUCTOS")
+                                            ?>
+                                        </span>
+
+                                        <ul class="collapse" id="collapseExample">
+
+                                            <li><a class="dropdown-item" href="index.php?home=productos&genero=hombre">Hombres</a></li>
+                                            <li><a class="dropdown-item" href="index.php?home=productos&genero=mujer">Mujeres</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="index.php?home=productos">Catalogo completo</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="mt-5 col-md-5 col-lg-2">
+            <div class="d-flex col-5 mt-5 col-md-5 col-lg-2">
                 <i class="fa-brands fa-facebook me-3"></i>
                 <i class="fa-brands fa-linkedin-in me-3"></i>
                 <i class="fa-brands fa-twitter me-3"></i>
@@ -231,7 +236,7 @@ if (isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_
             <div class="col-12 col-md-5 col-lg-3 d-flex flex-column align-items-center align-items-sm-start ps-sm-5 mt-lg-5 mt-md-5">
                 <img src="./imagenes/header/logo.png" alt="logo de la marca">
                 <p class="text-center text-md-start mt-2 mb-4">
-                    © 2024 Progresive Web Apps. Todos los derechos reservados.
+                    © 2024 Karl Fashion. Todos los derechos reservados.
                 </p>
             </div>
             <div class="col-12 col-md-3 col-sm-6 col-lg-2 footer-lista-1 mt-5"> <!-- LISTA DE ENLACES 1 -->
@@ -259,16 +264,13 @@ if (isset($valoresGet["home"]) && array_key_exists($valoresGet["home"], $acceso_
                         <a href="#">Mi cuenta</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="#">Diseñadores</a>
                     </li>
                     <li>
-                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Soporte Tecnico</a>
                     </li>
                     <li>
-                        <a href="#">Devoluciones</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
+                        <a href="#">Sumate al Equipo</a>
                     </li>
                 </ul>
             </div>

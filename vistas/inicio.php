@@ -3,7 +3,7 @@
         <h2 class="text-center fs-1">Quienes somos</h2>
     </div>
     <h3 class="col-12 text-center fs-5 mt-3">¡Bienvenido a Karl Fashion!</h3>
-    <p class="col-12 col-xl-7 text-center mt-5 mb-5">
+    <p class="col-12 col-md-8 col-xl-7 text-center mt-5 mb-5">
     En <strong>Karl Fashion</strong>, nos apasiona la moda y creemos en la expresión personal a través de la ropa. Ofrecemos una amplia selección de prendas de alta calidad para hombres y mujeres que buscan destacar su estilo único en cualquier ocasión. Nos comprometemos a proporcionar una experiencia de compra excepcional y a ayudarte a encontrar el conjunto perfecto para cada ocasión.
     </p>
 </section>
