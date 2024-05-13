@@ -7,6 +7,10 @@ main .catalogo_productos div .filtro_categorias div div .filtro_categorias_conte
     padding-bottom: 1rem;
 }
 
+.main .catalogo_productos .contenedor_productos div .tarjeta_catalogo  {
+    min-height: 450px !important;
+}
+
 main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul {
     padding: 0px;
     position: relative;
@@ -27,7 +31,7 @@ main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul .des
 }
 
 main .catalogo_productos .contenedor_productos div .tarjeta_catalogo div ul .descuento-aplicado {
-    position: absolute;
+    /*position: absolute;*/
     color: var(--color-3);
     font-size: 1.8rem;
 }

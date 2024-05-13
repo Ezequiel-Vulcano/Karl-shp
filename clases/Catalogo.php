@@ -1,5 +1,6 @@
-<?php 
-class Catalogo{
+<?php
+class Catalogo
+{
 
     private $porcentaje;
     private $descuento;
@@ -12,6 +13,7 @@ class Catalogo{
     private $img;
     private $descripcion;
     private $estrellas;
+    private $fecha;
 
 
 
@@ -20,15 +22,16 @@ class Catalogo{
 
 
     /**
-    * Funcion que se encarga de devolver el catalogo completo del JSON.
-    * @return array devuelve un array con todos los articulos de mi catalogo.
-    */
-    public function catalogo_completo():array {
+     * Funcion que se encarga de devolver el catalogo completo del JSON.
+     * @return array devuelve un array con todos los articulos de mi catalogo.
+     */
+    public function catalogo_completo(): array
+    {
         $catalogo = [];
         $catalogoJSON = file_get_contents("./js/catalogo.json");
-        $JSON = json_decode( $catalogoJSON);
+        $JSON = json_decode($catalogoJSON);
 
-        foreach ($JSON as $producto){
+        foreach ($JSON as $producto) {
 
             $articulo = new self();
 
@@ -44,62 +47,73 @@ class Catalogo{
             $articulo->descripcion = $producto->descripcion;
             $articulo->estrellas = $producto->estrellas;
 
-        $catalogo[] = $articulo;
+            $catalogo[] = $articulo;
         }
 
         return $catalogo;
     }
 
     /**
-    * Funcion que se encarga de generar dinamicamente las tarjetas de productos.
-    * @param array es el array que contiene todos los filtrados o catalogo completo.
-    */
-    public function mostrar_tarjetas(array $productos):void{
-        foreach($productos as $valor){?>
-            <div class="col-xl-4 p-xl-4 tarjeta_catalogo mb-4 mt-0">
-                <div>
-                    <a href="./index.php?home=detalle_productos&id=<?php echo $valor->getId()?>&genero=<?php echo $valor->getGenero()?>" class="text-decoration-none">
-                        <div>
-                            <img src="<?php echo $valor->getImg()?>" class="img-fluid" alt="foto de <?php echo $valor->getNombre()?>">
-                        </div>
-                    </a>
-                    <ul class="w-100">
-                        <li><h3 class="text-start mt-3"><?php echo $valor->getNombre()?></h3></li>
-                        
-                        <li>
-                            <!-- FUNCION QUE SE ENCARGA DE APLICAR EL DESCUENTO SI ES QUE EL PRODUCTO TIENE LA VARIABLE DESCUENTO EN TRUE -->
-                            <?php if($valor->getDescuento()) { ?>
-                                
-                                <li class="w-100 text-start descuento"><?php echo '$ ' . number_format($valor->getPrecio(), 0, ',', '.')?></li>
-                                <li class="w-100 text-start descuento-aplicado"><?php echo '$ ' . number_format(($valor->getPrecio() - (($valor->getPrecio())*$valor->getPorcentaje())), 0, ',', '.')?> 
-                                </li>
-                            <?php
-                            } else {  
-                            ?>
-                                <li class="w-100 text-start descuento-negativo"><?php echo '$ ' . number_format($valor->getPrecio(), 0, ',', '.'); ?></li>
-                            <?php
-                            }
-                            ?>
-                        
-                        </li>
-                        
-                    </ul>
+     * Funcion que se encarga de generar dinamicamente las tarjetas de productos.
+     * @param array es el array que contiene todos los filtrados o catalogo completo.
+     */
+    public function mostrar_tarjetas(array $productos): void
+    {
+        foreach ($productos as $valor) { ?>
+            <?php if ($valor->getDescuento()) { ?>
+                <div class="col-md-5 col-9 col-xl-4 p-xl-4 tarjeta_catalogo mb-5 mt-0">
+                    <div>
+                        <a href="./index.php?home=detalle_productos&id=<?php echo $valor->getId() ?>&genero=<?php echo $valor->getGenero() ?>" class="text-decoration-none">
+                            <div>
+                                <img src="<?php echo $valor->getImg() ?>" class="img-fluid" alt="foto de <?php echo $valor->getNombre() ?>">
+                            </div>
+                        </a>
+                        <ul class="w-100">
+                            <li>
+                                <h3 class="text-start mt-3"><?php echo $valor->getNombre() ?></h3>
+                            </li>
+                            <li class="text-start descuento"><?php echo '$ ' . number_format($valor->getPrecio(), 0, ',', '.') ?></li>
+                            <li class="text-start descuento-aplicado"><?php echo '$ ' . number_format(($valor->getPrecio() - (($valor->getPrecio()) * $valor->getPorcentaje())), 0, ',', '.') ?></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        <?php } 
+            <?php
+            } else {
+            ?>
+                <div class="col-md-5 col-9 col-xl-4 p-xl-4 tarjeta_catalogo mt-0">
+                    <div>
+                        <a href="./index.php?home=detalle_productos&id=<?php echo $valor->getId() ?>&genero=<?php echo $valor->getGenero() ?>" class="text-decoration-none">
+                            <div>
+                                <img src="<?php echo $valor->getImg() ?>" class="img-fluid" alt="foto de <?php echo $valor->getNombre() ?>">
+                            </div>
+                        </a>
+                        <ul class="w-100">
+                            <li>
+                                <h3 class="text-start mt-3"><?php echo $valor->getNombre() ?></h3>
+                            </li>
+                            <li class="text-start descuento-negativo"><?php echo '$ ' . number_format($valor->getPrecio(), 0, ',', '.'); ?></li>
+                        </ul>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+
+        <?php }
     }
 
     /**
-    * Funcion que se encarga de filtrar el catalago por genero.
-    * @return array devuelve un array con el genero seleccionado.
-    * @param string es el nombre del genero a filtrar (hombre, mujer, niños).
-    * @param array es el array que contiene todos los productos de mi marca.
-    */
-    function filtrar_por_genero(string $genero, array $productos):array{
+     * Funcion que se encarga de filtrar el catalago por genero.
+     * @return array devuelve un array con el genero seleccionado.
+     * @param string es el nombre del genero a filtrar (hombre, mujer, niños).
+     * @param array es el array que contiene todos los productos de mi marca.
+     */
+    function filtrar_por_genero(string $genero, array $productos): array
+    {
         $lista_filtrada = [];
 
-        foreach($productos as $valor){
-            if($valor->getGenero() == $genero) {
+        foreach ($productos as $valor) {
+            if ($valor->getGenero() == $genero) {
                 $lista_filtrada[] = $valor;
             }
         };
@@ -108,13 +122,14 @@ class Catalogo{
     }
 
     /**
-    * Funcion que se encarga de traerme el producto seleccionado por el usuario a traves del ID.
-    * @param array es el array que contiene todo mi catalogo completo.
-    * @param string es el ID que me sirve para rastrear el producto dentro de mi catalogo.
-    */
-    function buscar_producto(string $id, array $catalogo){
-        foreach($catalogo as $valor){
-            if($valor->getId() == $id) {
+     * Funcion que se encarga de traerme el producto seleccionado por el usuario a traves del ID.
+     * @param array es el array que contiene todo mi catalogo completo.
+     * @param string es el ID que me sirve para rastrear el producto dentro de mi catalogo.
+     */
+    function buscar_producto(string $id, array $catalogo)
+    {
+        foreach ($catalogo as $valor) {
+            if ($valor->getId() == $id) {
                 return  $valor;
             };
         };
@@ -123,16 +138,17 @@ class Catalogo{
     }
 
     /**
-    * Funcion que se encarga de mostrar productos relacionados como referencia para el usuario.
-    * @param array es el array que contiene todo mi catalogo completo.
-    * @param string es el genero por el que voy a filtrar.
-    * @return array devuelve un array con todos los productos del genero seleccionado.
-    */
-    function productos_relacionados(array $catalogoCompleto, string $generoFiltrar ):array{
+     * Funcion que se encarga de mostrar productos relacionados como referencia para el usuario.
+     * @param array es el array que contiene todo mi catalogo completo.
+     * @param string es el genero por el que voy a filtrar.
+     * @return array devuelve un array con todos los productos del genero seleccionado.
+     */
+    function productos_relacionados(array $catalogoCompleto, string $generoFiltrar): array
+    {
         $productos_mostrar = [];
 
-        foreach($catalogoCompleto as $producto_agregado){
-            if($producto_agregado->getGenero() == $generoFiltrar){
+        foreach ($catalogoCompleto as $producto_agregado) {
+            if ($producto_agregado->getGenero() == $generoFiltrar) {
                 $productos_mostrar[] = $producto_agregado;
             }
         }
@@ -141,11 +157,12 @@ class Catalogo{
     }
 
     /**
-    * Función que selecciona tres productos únicos del array $productos_mostrar.
-    * @param array $productos_mostrar El array de productos a seleccionar.
-    * @return array Un array con tres productos únicos seleccionados.
-    */
-    function seleccionar_tres_productos(array $productos_mostrar): array {
+     * Función que selecciona tres productos únicos del array $productos_mostrar.
+     * @param array $productos_mostrar El array de productos a seleccionar.
+     * @return array Un array con tres productos únicos seleccionados.
+     */
+    function seleccionar_tres_productos(array $productos_mostrar): array
+    {
         $productos_seleccionados = [];
         $indices_utilizados = [];
 
@@ -162,66 +179,70 @@ class Catalogo{
     }
 
     /**
-    * Función que se encarga de mostrar el detalle de los productos individualmente.
-    * @param object es el objto del producto en particular que voy a utilizar.
-    */
-    function generar_detalle_producto(object $producto){?>
-        <div class="col-xl-12">
+     * Función que se encarga de mostrar el detalle de los productos individualmente.
+     * @param object es el objto del producto en particular que voy a utilizar.
+     */
+    function generar_detalle_producto(object $producto)
+    { ?>
+        <div class="col-xl-12 col-10">
             <div class="row">
                 <div class="col-xl-5 me-xl-2">
                     <img class="img-fluid" src="<?php echo $producto->getImg() ?>" alt="foto de <?php echo $producto->getNombre() ?>">
                 </div>
-                <div class="col-xl-4 detalle_producto_info ms-xl-0">
+                <div class="col-xl-4 detalle_producto_info ms-xl-0 mt-5">
                     <h2><?php echo $producto->getNombre() ?></h2>
                     <div>
                         <!-- FUNCION QUE SE ENCARGA DE APLICAR EL DESCUENTO SI ES QUE EL PRODUCTO TIENE LA VARIABLE DESCUENTO EN TRUE -->
                         <?php if ($producto->getDescuento()) { ?>
 
-                            <h3 class="w-100 text-start descuento-aplicado"><?php echo '$ ' . number_format(($producto->getPrecio() - (($producto->getPrecio()) * $producto->getPorcentaje())), 0, ',', '.') ?>
+                            <h3 class="text-start descuento-aplicado"><?php echo '$ ' . number_format(($producto->getPrecio() - (($producto->getPrecio()) * $producto->getPorcentaje())), 0, ',', '.') ?>
                             </h3>
                         <?php
                         } else {
                         ?>
-                            <h3 class="w-100 text-start descuento-negativo"><?php echo '$ ' . number_format($producto->getPrecio(), 0, ',', '.'); ?></h3>
+                            <h3 class="text-start descuento-negativo"><?php echo '$ ' . number_format($producto->getPrecio(), 0, ',', '.'); ?></h3>
                         <?php
                         }
                         ?>
                     </div>
-                    <div class="mb-xl-5 stock">
+                    <div class="stock">
                         Disponible: <span>En stock</span>
+                    </div>
+                    <div class="mb-5 stock">
+                        Fecha: <span><?php echo $producto->getFecha() ?></span>
                     </div>
 
                     <!-- ESTRUCTURA QUE SE ENCARGA DE GENERAR DINAMICAMENTE LAS ESTRELLAS DE UN PRODUCTO -->
 
                     <div>
                         <!-- Genera las estrellas rellenas -->
-                        <?php 
-                            $estrellas = $producto->getEstrellas();
-                            for ($i = 1; $i <= $estrellas; $i++) {
+                        <?php
+                        $estrellas = $producto->getEstrellas();
+                        for ($i = 1; $i <= $estrellas; $i++) {
                         ?>
                             <i class="fa-solid fa-star" style="color: #ff9800;"></i>
                         <?php
-                            }
+                        }
                         ?>
 
                         <!-- Genera las estrellas vacias -->
-                        <?php 
-                            for ($i = $estrellas; $i <= 4; $i++) {
+                        <?php
+                        for ($i = $estrellas; $i <= 4; $i++) {
                         ?>
                             <i class="fa-regular fa-star" style="color: #ff9800;"></i>
-                        <?php 
-                            }
+                        <?php
+                        }
                         ?>
                     </div>
 
 
-                    <div class="mt-xl-5">
+                    <div class="mt-xl-5 mt-5">
                         <span class="text-uppercase">Talles:</span>
                         <ul class="d-flex mt-xl-3 p-xl-0">
-                            <li class="talles">33</li>
-                            <li class="talles">33</li>
-                            <li class="talles">33</li>
-                            <li class="talles">33</li>
+                            <li class="talles">32</li>
+                            <li class="talles">34</li>
+                            <li class="talles">36</li>
+                            <li class="talles">38</li>
                         </ul>
                     </div>
                     <div class="accordion mt-xl-5" id="accordionExample">
@@ -256,10 +277,15 @@ class Catalogo{
                             </div>
                         </div>
                     </div>
+
+                    <!--
+                    <div class="mt-4 agregarCarrito">
+                        <span>Agregar al Carrito</span>
+                    </div> -->
                 </div>
             </div>
         </div>
-    <?php
+<?php
     }
 
 
@@ -270,7 +296,7 @@ class Catalogo{
 
     /**
      * Get the value of porcentaje
-     */ 
+     */
     public function getPorcentaje()
     {
         return $this->porcentaje;
@@ -280,7 +306,7 @@ class Catalogo{
      * Set the value of porcentaje
      *
      * @return  self
-     */ 
+     */
     public function setPorcentaje($porcentaje)
     {
         $this->porcentaje = $porcentaje;
@@ -290,7 +316,7 @@ class Catalogo{
 
     /**
      * Get the value of descuento
-     */ 
+     */
     public function getDescuento()
     {
         return $this->descuento;
@@ -300,7 +326,7 @@ class Catalogo{
      * Set the value of descuento
      *
      * @return  self
-     */ 
+     */
     public function setDescuento($descuento)
     {
         $this->descuento = $descuento;
@@ -310,7 +336,7 @@ class Catalogo{
 
     /**
      * Get the value of id
-     */ 
+     */
     public function getId()
     {
         return $this->id;
@@ -320,7 +346,7 @@ class Catalogo{
      * Set the value of id
      *
      * @return  self
-     */ 
+     */
     public function setId($id)
     {
         $this->id = $id;
@@ -330,7 +356,7 @@ class Catalogo{
 
     /**
      * Get the value of nombre
-     */ 
+     */
     public function getNombre()
     {
         return $this->nombre;
@@ -340,7 +366,7 @@ class Catalogo{
      * Set the value of nombre
      *
      * @return  self
-     */ 
+     */
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
@@ -350,7 +376,7 @@ class Catalogo{
 
     /**
      * Get the value of tipo
-     */ 
+     */
     public function getTipo()
     {
         return $this->tipo;
@@ -360,7 +386,7 @@ class Catalogo{
      * Set the value of tipo
      *
      * @return  self
-     */ 
+     */
     public function setTipo($tipo)
     {
         $this->tipo = $tipo;
@@ -370,7 +396,7 @@ class Catalogo{
 
     /**
      * Get the value of genero
-     */ 
+     */
     public function getGenero()
     {
         return $this->genero;
@@ -380,7 +406,7 @@ class Catalogo{
      * Set the value of genero
      *
      * @return  self
-     */ 
+     */
     public function setGenero($genero)
     {
         $this->genero = $genero;
@@ -390,7 +416,7 @@ class Catalogo{
 
     /**
      * Get the value of colores
-     */ 
+     */
     public function getColores()
     {
         return $this->colores;
@@ -400,7 +426,7 @@ class Catalogo{
      * Set the value of colores
      *
      * @return  self
-     */ 
+     */
     public function setColores($colores)
     {
         $this->colores = $colores;
@@ -410,7 +436,7 @@ class Catalogo{
 
     /**
      * Get the value of precio
-     */ 
+     */
     public function getPrecio()
     {
         return $this->precio;
@@ -420,7 +446,7 @@ class Catalogo{
      * Set the value of precio
      *
      * @return  self
-     */ 
+     */
     public function setPrecio($precio)
     {
         $this->precio = $precio;
@@ -430,7 +456,7 @@ class Catalogo{
 
     /**
      * Get the value of img
-     */ 
+     */
     public function getImg()
     {
         return $this->img;
@@ -440,7 +466,7 @@ class Catalogo{
      * Set the value of img
      *
      * @return  self
-     */ 
+     */
     public function setImg($img)
     {
         $this->img = $img;
@@ -450,7 +476,7 @@ class Catalogo{
 
     /**
      * Get the value of descripcion
-     */ 
+     */
     public function getDescripcion()
     {
         return $this->descripcion;
@@ -460,7 +486,7 @@ class Catalogo{
      * Set the value of descripcion
      *
      * @return  self
-     */ 
+     */
     public function setDescripcion($descripcion)
     {
         $this->descripcion = $descripcion;
@@ -470,7 +496,7 @@ class Catalogo{
 
     /**
      * Get the value of estrellas
-     */ 
+     */
     public function getEstrellas()
     {
         return $this->estrellas;
@@ -480,14 +506,33 @@ class Catalogo{
      * Set the value of estrellas
      *
      * @return  self
-     */ 
+     */
     public function setEstrellas($estrellas)
     {
         $this->estrellas = $estrellas;
 
         return $this;
     }
-    
+
+    /**
+     * Get the value of fecha
+     */ 
+    public function getFecha()
+    {
+        return $this->fecha;
+    }
+
+    /**
+     * Set the value of fecha
+     *
+     * @return  self
+     */ 
+    public function setFecha($fecha)
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
 }
 
 

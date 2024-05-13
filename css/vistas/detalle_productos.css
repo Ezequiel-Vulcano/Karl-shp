@@ -56,9 +56,7 @@
 
 /*____________________ ELIMINO ATRIBUTOS DE BOOSTRAP POR DEFECTO ____________________*/
 
-.accordion-button:not(.collapsed) {
-    background-color: none !important;
-}
+
 
 .accordion-item:first-of-type .accordion-button {
     border-top-left-radius: 0px !important;
@@ -83,4 +81,9 @@
     border-bottom: var(--borde-2);
     border-left: none;
     border-right: none;
+}
+
+.accordion-item:first-of-type {
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
 }

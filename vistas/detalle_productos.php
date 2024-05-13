@@ -22,10 +22,10 @@ $producto_relacionado_3 = $objetoCatalogo->seleccionar_tres_productos($producto_
     
     ?>
 
-    <div class="col-xl-12 mt-xl-5 catalogo_productos">
+    <div class="col-xl-12 mt-xl-5 catalogo_productos mt-5 p-0">
         <div class="contenedor_productos">
-            <h2>Productos Relacionados</h2>
-            <div class="d-flex">
+            <h2 class="text-center mb-3">Productos Relacionados</h2>
+            <div class="d-flex flex-wrap">
                 <!-- AGREGO LA FUNCION QUE SE ENCARGA DE GENERARME 3 PRODUCTOS ALEATORIOS PARA PODER MOSTRARLE AL USUARIO-->
                 <?php $objetoCatalogo->mostrar_tarjetas($producto_relacionado_3)?>
             </div>
@@ -36,7 +36,7 @@ $producto_relacionado_3 = $objetoCatalogo->seleccionar_tres_productos($producto_
     } else {
     ?>
 
-        <?php echo "producto nooooooooooo encontrado";  ?>
+        <?php require_once("vistas/404.php"); ?>
 
     <?php
     }

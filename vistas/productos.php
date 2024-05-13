@@ -17,18 +17,18 @@ $catalogoCompleto = $objetoCatalogo->catalogo_completo(); // Dentro de mi instan
 
 <section class="row catalogo_productos">
 
-    <!-- SECCION DE FILTROS POR CATEGORIA -->
+    <!-- SECCION DE FILTROS POR CATEGORIA (Mas adelante la voy a usar)
     <div class="col-xl-3">
         <h2>Categorias</h2>
         <div class="filtro_categorias">
             <div>
-                <!-- Filtro por sexo:
+                Filtro por sexo:
                 * Hombre
                 * Mujer
                 * Niños
-                -->
+
                 <div>
-                    <!-- HOMBRES -->
+                HOMBRES 
                     <div class="form-check mb-xl-3 mt-5 filtro_categorias_contenedores">
 
                         <input class="form-check-input" type="checkbox" value="" id="check_hombres" data-bs-target="#collapse_hombres" data-bs-toggle="collapse">
@@ -73,7 +73,8 @@ $catalogoCompleto = $objetoCatalogo->catalogo_completo(); // Dentro de mi instan
                         </div>
                     </div>
 
-                    <!-- MUJERES -->
+                MUJERES 
+
                     <div class="form-check mb-xl-3 filtro_categorias_contenedores">
                         <input class="form-check-input" type="checkbox" value="" id="check_mujeres" data-bs-target="#collapse_mujeres" data-bs-toggle="collapse">
                         <label class="form-check-label" for="check_mujeres" aria-controls="collapse_mujeres"
@@ -116,56 +117,12 @@ $catalogoCompleto = $objetoCatalogo->catalogo_completo(); // Dentro de mi instan
                             </div>
                         </div>
                     </div>
-
-                    <!-- NIÑOS -->
-                    <div class="form-check mb-xl-3 filtro_categorias_contenedores">
-                        <input class="form-check-input" type="checkbox" value="" id="check_niños" data-bs-target="#collapse_niños" data-bs-toggle="collapse">
-                        <label class="form-check-label" for="check_niños" aria-controls="collapse_niños"
-                            data-bs-target="#collapse_niños" data-bs-toggle="collapse">
-                            Niños
-                        </label>
-
-                        <div class="collapse" id="collapse_niños">
-                            <div class=" ">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="remeras_niños">
-                                    <label class="form-check-label" for="remeras_niños">
-                                        Remeras
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="camisas_niños">
-                                    <label class="form-check-label" for="camisas_niños">
-                                        Camisas
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="pantalones_niños">
-                                    <label class="form-check-label" for="pantalones_niños">
-                                        Pantalones
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="categoria_4_niños">
-                                    <label class="form-check-label" for="categoria_4_niños">
-                                        Categoria_4
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="categoria_5_niños">
-                                    <label class="form-check-label" for="categoria_5_niños">
-                                        Categoria_5
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-
             </div>
         </div>
     </div>
+    -->
+
 
     <!-- VENTANA QUE MUESTRA TODOS LOS PRODUCTOS -->
     <div class="d-flex col-xl-9 contenedor_productos">
